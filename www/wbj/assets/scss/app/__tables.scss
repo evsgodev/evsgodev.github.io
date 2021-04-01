@@ -1,0 +1,269 @@
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:          .5rem;
+$table-cell-padding-sm:       .3rem;
+
+$table-bg:                    transparent;
+$table-accent-bg:             rgba($gray-600, 0.05);
+$table-hover-bg:              rgba($gray-600, 0.075);
+$table-active-bg:             $table-hover-bg;
+
+$table-border-width:          $border-width;
+$table-border-color:          $gray-300;
+
+$table-head-bg:               $gray-200;
+$table-head-color:            $gray-700;
+
+$table-dark-bg:               $gray-900;
+$table-dark-accent-bg:        rgba($white, .05);
+$table-dark-hover-bg:         rgba($white, .075);
+$table-dark-border-color:     lighten($gray-900, 7.5%);
+$table-dark-color:            $body-bg;
+
+.table-responsive {
+  .dt-bootstrap4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .table {
+    min-width: 480px;
+  }
+}
+
+.dataTable {
+  width: 100%!important;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.table {
+  font-size: 12px;
+
+  th, td {
+    border-bottom: 1px solid rgba($gray-600, 0.3);
+  }
+
+  thead {
+    th {
+      white-space: nowrap;
+      padding: $table-cell-padding;
+      border-top: none;
+      border-bottom: 1px solid rgba($gray-600, 0.3);
+      font-size: 10px;
+      font-weight: 700;
+      color: $gray-600;
+      background-color: rgba($gray-600, 0.1);
+      text-transform: uppercase;
+
+      @at-root .dataTable thead th {
+        padding: $table-cell-padding;
+      }
+
+      &[class*=sort] {
+        cursor: pointer;
+
+        &:hover {
+          color: $black;
+        }
+
+        .caret {
+          display: inline-block;
+          vertical-align: middle;
+
+          &:before,
+          &:after {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            margin: 1px auto;
+            border: 4px solid currentColor;
+            border-width: 4px;
+            border-color: currentColor transparent;
+          }
+
+          &:before {
+            border-top-width: 0;
+          }
+
+          &:after {
+            border-bottom-width: 0;
+          }
+        }
+
+        &:hover {
+          color: $black;
+        }
+
+        &[class*=asc],
+        &[class*=desc] {
+          .caret {
+            opacity: 1;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+
+        &[class*=asc] {
+          .caret {
+            transform: rotate(0deg);
+          }
+        }
+
+        &[class*=desc] {
+          .caret {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .caret {
+        position: relative;
+        min-width: 1em;
+        margin-left: 2px;
+        font-size: 14px;
+        line-height: 1;
+        opacity: .8;
+      }
+    }
+  }
+
+  td {
+    vertical-align: middle;
+    height: 40px;
+    padding: $table-cell-padding;
+
+    &.disabled {
+      color: $text-muted;
+    }
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped-even {
+  tbody tr:nth-of-type(odd) {
+    background-color: transparent;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: $table-accent-bg;
+  }
+}
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr {
+    @include hover {
+      background-color: $table-hover-bg;
+    }
+
+    &.select {
+      background-color: lighten($table-hover-bg, 5%);
+    }
+  }
+}
+
+.table-row {
+  font-size: 12px;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+
+  .table {
+    font-weight: normal;
+    letter-spacing: normal;
+  }
+
+  &__search {
+    display: flex;
+
+    .btn {
+      font-size: 1rem;
+      border-radius: 0;
+      background-color: transparent;
+    }
+
+    .form-control {
+      font-size: inherit;
+      border-radius: 0;
+      border-width: 0 0 1px 0;
+      border-bottom-color: transparent;
+      box-shadow: none;
+
+      &:focus {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+
+  &__paginate {
+    display: flex;
+    justify-content: center;
+    color: $gray-600;
+
+    a {
+      margin: 0 0.5rem 0.5rem;
+      letter-spacing: 0.06em;
+
+      &.current {
+        color: $success;
+      }
+
+      text-decoration: none;
+    }
+  }
+
+  &__length {
+    select.form-control {
+      padding: 0;
+      width: auto;
+      border: none;
+      color: $gray-900;
+      line-height: 1;
+
+      &:not([size]):not([multiple]) {
+        height: auto;
+      }
+    }
+  }
+}
+
+
+.championship-category {
+  table {
+    th {
+      font-weight: normal;
+      font-size: 10px;
+    }
+  }
+}
+
+.calendar-list {
+  &__item {
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+    h4 + hr {
+      margin-bottom: 1.75rem;
+    }
+
+    .table {
+      min-width: 580px;
+
+      th:last-child {
+        width: 140px!important;
+      }
+    }
+  }
+}

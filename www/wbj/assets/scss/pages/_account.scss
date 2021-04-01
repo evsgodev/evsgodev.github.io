@@ -1,0 +1,96 @@
+.account-avatar {
+  max-width: 140px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.account-nav {
+  &__menu {
+    border-bottom: none;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: $text-muted;
+    padding: 0.5rem 0 0.5rem 1.75rem;
+    border: none;
+    border-left: 1px solid $gray-400;
+    border-image: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: calc(100% - 10px);
+      border-left: 3px solid transparent;
+    }
+
+    &.active {
+      color: $link-hover-color;
+      background-color: transparent;
+
+      &::before {
+        border-left-color: currentColor;
+      }
+    }
+  }
+}
+
+.payment-card {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  .custom-control-input {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .custom-control-input:checked ~ .card {
+    border-color: $success;
+  }
+
+  .custom-control-input:invalid ~ .card {
+    border-color: $danger;
+  }
+
+  .custom-control-label {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 140px;
+    padding: 1.25rem;
+    margin: 0;
+
+    &:before,
+    &:after {
+      left: auto;
+      right: 1rem;
+      top: 1.25rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__meta {
+    width: 100%;
+
+    .date {
+      font-size: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    .number {
+      color: $text-muted;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+  }
+}

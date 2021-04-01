@@ -1,0 +1,33 @@
+@import 'utilities/include-media';
+@import 'bootstrap/bootstrap';
+@import 'fontawesome/fa-brands';
+@import 'fontawesome/fa-regular';
+@import 'fontawesome/fa-solid';
+
+@import "app/_core";
+@import "app/_type";
+@import "app/_buttons";
+@import "app/_badge";
+@import "app/_dropdown";
+@import "app/_forms";
+@import "app/_forms-custom";
+@import "app/_tables";
+@import "app/_tabs";
+@import "app/_modals";
+@import "app/_sprites";
+@import "app/_icons";
+@import "app/_datepicker";
+
+@import "app/site-menu";
+@import "app/main";
+@import "app/header";
+@import "app/search";
+@import "app/slider-banner";
+@import "app/slider-timeline";
+@import "app/page-slider";
+@import "app/cards";
+@import "app/contacts";
+@import "app/footer";
+
+@import "pages/account";
+@import "pages/franchise";

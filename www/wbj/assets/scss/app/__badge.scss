@@ -1,0 +1,84 @@
+
+// Badges
+
+$badge-font-size:                   10px;
+$badge-font-weight:                 $font-weight-bold;
+$badge-padding-y:                   .15em;
+$badge-padding-x:                   .3em;
+$badge-border-radius:               0.75rem;
+
+$badge-pill-padding-x:              .6em;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          10rem;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $badge-padding-y $badge-padding-x;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  @include border-radius($badge-border-radius);
+
+  text-decoration: none;
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+}
+
+// Pill badges
+//
+// Make them extra rounded with a modifier to replace v3's badges.
+
+.badge-pill {
+  height: 20px;
+  min-width: 20px;
+  text-align: center;
+  padding-right: $badge-pill-padding-x;
+  padding-left: $badge-pill-padding-x;
+  @include border-radius($badge-pill-border-radius);
+}
+
+@mixin badge-variant($bg) {
+  // color: color-yiq($bg);
+  color: $bg;
+  background-color: rgba($bg, 0.2);
+
+  &[href] {
+    @include hover-focus {
+      // color: color-yiq($bg);
+      color: $bg;
+      text-decoration: none;
+      background-color: darken($bg, 10%);
+    }
+  }
+}
+
+.badge-mark {
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: $border-radius;
+}
+
+@each $color, $value in $colors {
+  .badge-#{$color} {
+    @include badge-variant($value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include badge-variant($value);
+  }
+}
+

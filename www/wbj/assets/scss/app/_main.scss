@@ -1,0 +1,140 @@
+$column-gutter-sm: 10px;
+
+$container-fluid-width: 1500px;
+$container-content-width: 825px;
+$container-content-padding-x: 2rem;
+
+.row-sm {
+  margin-left: -$column-gutter-sm;
+  margin-right: -$column-gutter-sm;
+
+  .row {
+    margin-left: -$column-gutter-sm;
+    margin-right: -$column-gutter-sm;
+  }
+
+  [class*=col-] {
+    padding-left: $column-gutter-sm;
+    padding-right: $column-gutter-sm;
+  }
+}
+
+$column-gutters: 10 16 20 24;
+
+@each $size in $column-gutters {
+    .gutters-#{$size} {
+        margin-right: -$size/2#{'px'};
+        margin-left: -$size/2#{'px'};
+
+        > .col,
+        > [class*="col-"] {
+            padding-right: $size/2#{'px'};
+            padding-left: $size/2#{'px'};
+        }
+    }
+}
+
+.layout-fluid {
+  min-height: 100vh;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid .container {
+  @include media('>xl') {
+    max-width: 845px;
+    width: 100%;
+  }
+}
+
+.page-content,
+.modal,
+.searchbar {
+  .container {
+    max-width: $container-content-width;
+  }
+}
+
+// .page-content {
+//   .container-fluid {
+//     max-width: $container-fluid-width;
+//   }
+// }
+
+.container_1170 {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.page-content,
+.modal-page {
+  h1,
+  .h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title-divider {
+  display: block;
+  content: '';
+  width: 100%;
+  max-width: 60px;
+  line-height: 1;
+  margin-top: -1rem;
+  margin: -1rem 0 2rem;
+  border-bottom: 5px solid $primary;
+
+  .bg-success & {
+    border-color: currentColor;
+  }
+
+  .text-center & {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-row {
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+@include media-breakpoint-up(sm) {
+  .page-content,
+  .modal,
+  .searchbar {
+    .container {
+      max-width: $container-content-width;
+      padding-left: $container-content-padding-x;
+      padding-right: $container-content-padding-x;
+    }
+
+    figure {
+      margin-left: -$container-content-padding-x;
+      margin-right: -$container-content-padding-x;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page-content {
+    .section-row:last-child {
+      padding-bottom: 5rem;
+    }
+  }
+}

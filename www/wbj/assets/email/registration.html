@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Simple Transactional Email</title>
+
+  <style>
+    @media only screen and (max-width: 620px) {
+      table[class=body] h1 {
+        font-size: 24px;
+      }
+      table[class=body] p,
+          table[class=body] ul,
+          table[class=body] ol,
+          table[class=body] td,
+          table[class=body] span,
+          table[class=body] a {
+        font-size: 12px !important;
+      }
+      table[class=body] .wrapper,
+          table[class=body] .article {
+        padding: 10px !important;
+      }
+      table[class=body] .content {
+        padding: 0 !important;
+      }
+      table[class=body] .container {
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      table[class=body] .main {
+        border-left-width: 0 !important;
+        border-radius: 0 !important;
+        border-right-width: 0 !important;
+      }
+      table[class=body] .btn table {
+        width: 100% !important;
+      }
+      table[class=body] .btn a {
+        width: 100%;
+        padding: 12px 25px;
+      }
+      table[class=body] .img-responsive {
+        height: auto !important;
+        max-width: 100% !important;
+        width: auto !important;
+      }
+      p,
+          ul,
+          ol {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 30px;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .header {
+        margin: 10px 0;
+      }
+      .mb-5 {
+        margin-bottom: 30px;
+      }
+    }
+    
+    
+    @media all {
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+          .ExternalClass p,
+          .ExternalClass span,
+          .ExternalClass font,
+          .ExternalClass td,
+          .ExternalClass div {
+        line-height: 100%;
+      }
+      .apple-link a {
+        color: #7D949A;
+        font-family: inherit !important;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: normal;
+        text-decoration: none !important;
+        font-style: normal;
+        text-align: center;
+      }
+      .copyright {
+        font-size: 12px;
+        text-align: center;
+        color: #7D949A;
+      }
+      .btn-primary table td:hover {
+        background-color: #76aa0b !important;
+      }
+      .btn-primary a:hover {
+        background-color: #76aa0b !important;
+        border-color: #76aa0b !important;
+      }
+    }
+  </style>
+</head>
+
+<body class style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; background-color: #F3F6F7; color: #082746; font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; line-height: 1.75; margin: 0; padding: 0;">
+  <table border="0" cellpadding="0" cellspacing="0" class="body" style="background-color: #F3F6F7; border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+    <tr>
+      <td style="font-family: inherit; font-size: 14px; vertical-align: top;">&nbsp;</td>
+      <td class="container" style="Margin: 0 auto !important; display: block; font-family: inherit; font-size: 14px; max-width: 600px; padding: 0; vertical-align: top; width: 600px;">
+        <div class="content" style="Margin: 0 auto; box-sizing: border-box; display: block; max-width: 600px; padding: 10px;">
+          <!-- START CENTERED WHITE CONTAINER -->
+          <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; mso-hide: all; opacity: 0; overflow: hidden; visibility: hidden; width: 0;">
+
+</span>
+
+          <!-- START Header -->
+          <div class="header" style="margin: 10px; text-align: center;">
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+              <tr>
+                <td class="content-block" style="font-family: inherit; font-size: 14px; padding-bottom: 10px; padding-top: 10px; vertical-align: top;">
+                  <img src="images/logo.png" alt="#" style="-ms-interpolation-mode: bicubic; border: none; max-width: 100%;">
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- END Header -->
+
+          <!-- START banner -->
+          <div class="banner">
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+              <tr>
+                <td style="font-family: inherit; font-size: 14px; vertical-align: top;">
+                  <a href="#" title="#" style="color: #8FCE0D; text-decoration: underline;">
+                    <img src="images/banner.jpg" alt="#" style="-ms-interpolation-mode: bicubic; border: none; border-radius: 4px 4px 0 0; display: block; max-width: 100%;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- END banner -->
+
+          <table class="main" style="background: #ffffff; border-collapse: separate; border-radius: 4px; box-shadow: 0px 20px 60px rgba(125, 148, 154, 0.05), 0px 8px 15px rgba(125, 148, 154, 0.1); mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 10px; padding-top: 20px; width: 100%;">
+            <!-- START MAIN CONTENT AREA -->
+            <tr>
+              <td class="wrapper align-center" style="box-sizing: border-box; font-family: inherit; font-size: 14px; padding: 20px; text-align: center; vertical-align: top;">
+                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+                  <tr>
+                    <td style="font-family: inherit; font-size: 14px; vertical-align: top;">
+                      <h1 style="color: #082746; font-family: inherit; font-size: 24px; font-weight: 700; line-height: 1.4; margin-bottom: 26px; margin-top: 0; text-align: center;">Подтвердите регистрацию</h1>
+                      <p style="font-size: 14px; font-weight: normal; margin-bottom: 30px; margin-top: 0;">Ваш адрес
+                        <strong>admin@example.com </strong>был использован для регистрации на сайте waybjj.ru. Чтобы подтвердить регистрацию, нажмите на кнопку ниже.</p>
+                      <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary mb-5" style="border-collapse: separate; box-sizing: border-box; margin-bottom: 32px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+                        <tbody>
+                          <tr>
+                            <td align="center" style="font-family: inherit; font-size: 14px; padding-bottom: 0; vertical-align: top;">
+                              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; min-width: 270px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
+                                <tbody>
+                                  <tr>
+                                    <td style="background-color: #8FCE0D; border-radius: 4px; font-family: inherit; font-size: 14px; text-align: center; vertical-align: top;">
+                                      <a href="{confirm-url}" target="_blank" style="background-color: #8FCE0D; border: solid 1px #8FCE0D; border-color: #8FCE0D; border-radius: 4px; box-shadow: 0px 10px 24px rgba(113, 166, 5, 0.1), 0px 8px 8px rgba(113, 166, 5, 0.15); box-sizing: border-box; color: #FFFFFF; cursor: pointer; display: inline-block; font-size: 12px; font-weight: bold; letter-spacing: 0.08em; margin: 0; padding: 12px; text-decoration: none; text-transform: uppercase; width: 100%;">Подтвердить регистрацию</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="text-muted" style="color: #7D949A; font-size: 14px; font-weight: normal; line-height: 24px; margin-bottom: 30px; margin-top: 0; text-align: center;">Если Вы не понимаете, о чем идет речь, то просто проигнорируйте данное письмо.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+          </table>
+
+          <!-- START FOOTER -->
+          <div class="footer" style="clear: both; margin-top: 20px; padding-bottom: 10px; text-align: center; width: 100%;">
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+              <tr>
+                <td class="content-block" style="color: #999999; font-family: inherit; font-size: 12px; padding-bottom: 10px; padding-top: 10px; text-align: center; vertical-align: top;">
+                  <span class="copyright" style="color: #999999; font-size: 12px; text-align: center;">&COPY; 2018 WAYBJJ. Все права защищены.</span>
+                </td>
+              </tr>
+            </table>
+            <table class="social-links" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+              <tr>
+                <td class="content-block powered-by align-right" style="color: #999999; font-family: inherit; font-size: 12px; padding-bottom: 10px; padding-top: 10px; text-align: center; vertical-align: top;">
+                  <a href="#" style="color: #999999; font-size: 12px; line-height: 1; margin-left: 15px; margin-right: 15px; text-align: center; text-decoration: none; vertical-align: middle;">
+                    <img src="images/facebook.png" alt="Facebook" style="-ms-interpolation-mode: bicubic; border: none; line-height: 1; max-width: 100%; vertical-align: middle;">
+                  </a>
+                  <a href="#" style="color: #999999; font-size: 12px; line-height: 1; margin-left: 15px; margin-right: 15px; text-align: center; text-decoration: none; vertical-align: middle;">
+                    <img src="images/twitter.png" alt="Twitter" style="-ms-interpolation-mode: bicubic; border: none; line-height: 1; max-width: 100%; vertical-align: middle;">
+                  </a>
+                  <a href="#" style="color: #999999; font-size: 12px; line-height: 1; margin-left: 15px; margin-right: 15px; text-align: center; text-decoration: none; vertical-align: middle;">
+                    <img src="images/instagram.png" alt="Instagram" style="-ms-interpolation-mode: bicubic; border: none; line-height: 1; max-width: 100%; vertical-align: middle;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- END FOOTER -->
+
+          <!-- END CENTERED WHITE CONTAINER -->
+        </div>
+      </td>
+      <td style="font-family: inherit; font-size: 14px; vertical-align: top;">&nbsp;</td>
+    </tr>
+  </table>
+</body>
+
+</html>

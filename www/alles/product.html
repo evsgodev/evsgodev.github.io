@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <title>project</title>
+    <!-- Edge and IE-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="description">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/xzoom.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__row row justify-content-center align-items-center">
+          <div class="page-header__navbar dropdown col-md-3 col-lg-4 col-xl-3 d-inline-flex align-items-center">
+            <div class="page-header__logo d-inline-flex flex-md-wrap flex-lg-nowrap align-items-center"><a href="index.html"><img class="page-header__logo-image" src="images/logo.png" alt="#"></a><span class="page-header__logo-slogan">Производителей много — сайт один.</span></div>
+            <button class="page-header__toggle-menu toggle-menu d-md-none" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#siteMenu"><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span></button>
+            <nav class="site-menu collapse d-md-none" id="siteMenu">
+              <div class="site-menu__header d-flex justify-content-between align-items-center"><a class="site-menu__logo" href="#"><img class="img-fluid" src="images/logo.png" alt="#"></a></div>
+              <ul class="site-menu__list">
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-1"></i><span class="site-menu__link-text">Мягкая мебель</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-2"></i><span class="site-menu__link-text">Корпусная мебель</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-3"></i><span class="site-menu__link-text">Мебель для кухни</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-4"></i><span class="site-menu__link-text">Мебель для спальни</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-5"></i><span class="site-menu__link-text">Детская мебель</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-6"></i><span class="site-menu__link-text">Текстиль для дома</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-7"></i><span class="site-menu__link-text">Столы</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="page-header__search col-md-4 col-xl-3">
+            <form class="header-search" action="/" method="GET">
+              <input class="header-search__input form-control" type="search" name="field_search" placeholder="Введите запрос">
+              <button class="header-search__subject btn btn-primary" type="button"><i class="icon icon-search"></i></button>
+            </form>
+          </div>
+          <div class="page-header__contacts-row col-md-5 col-lg-4 col-xl-3 d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-end justify-content-lg-start align-items-center">
+            <ul class="page-header__contacts order-md-2">
+              <li class="page-header__contacts-item"><a class="page-header__number js-location__number" href="tel:80291550456">8 (029) 155-04-56</a></li>
+              <li class="page-header__contacts-item"><span class="page-header__mode">Работаем с 9.00 до 19.00</span></li>
+            </ul>
+            <div class="header-location dropdown js-location"><a class="header-location__toggle js-location__input" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="header-location__toggle-text">Старые Дороги</span><i class="header-location__toggle-caret s-icon s-icon-caret"></i></a>
+              <ul class="header-location__list dropdown-menu js-location__select">
+                <li class="dropdown-item" data-select="select" data-value="Старые Дороги" data-number="8 (029) 155-04-56">Старые Дороги</li>
+                <li class="dropdown-item" data-select="" data-value="Красноярск" data-number="8 (029) 155-04-56">Красноярск</li>
+                <li class="dropdown-item" data-select="" data-value="Сызрань" data-number="8 (029) 235-04-23">Сызрань</li>
+                <li class="dropdown-item" data-select="" data-value="Красноярск" data-number="8 (029) 122-04-43">Красноярск</li>
+                <li class="dropdown-item" data-select="" data-value="Нижний" data-number="8 (029) 155-34-23">Нижний</li>
+                <li class="dropdown-item" data-select="" data-value="Новгород" data-number="8 (029) 155-22-22">Новгород</li>
+                <li class="dropdown-item" data-select="" data-value="Новокузнецк" data-number="8 (029) 155-11-11">Новокузнецк</li>
+                <li class="dropdown-item" data-select="" data-value="Новороссийск" data-number="8 (029) 155-32-22">Новороссийск</li>
+                <li class="dropdown-item" data-select="" data-value="Новосибирск" data-number="8 (029) 155-04-55">Новосибирск</li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-header__panel panel-user col-12 col-xl-3">
+            <div class="panel-user__list">
+              <div class="panel-user__item">
+                <div class="panel-user__regist d-inline-flex flex-column"><a class="panel-user__regist-link" href="logon.html">Вход</a><a class="panel-user__regist-link" href="signup.html">Регистрация</a>
+                </div>
+              </div>
+              <div class="panel-user__item"><a class="panel-user__link" href="#"><i class="icon icon-aligned"></i><span class="panel-user__count">0</span></a></div>
+              <div class="panel-user__item"><a class="panel-user__link" href="#"><i class="icon icon-heart"></i><span class="panel-user__count">0</span></a></div>
+              <div class="panel-user__item"><a class="panel-user__link" href="#"><i class="icon icon-cart"></i><span class="panel-user__count">12</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="breadcrumbs-wrap container d-none d-md-block">
+        <nav class="breadcrumb-nav d-flex dropdown js-dropdown-fix">
+          <button class="toggle-menu" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#menuCategory"><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span></button>
+          <div class="menu-category menu-category--menu collapse" id="menuCategory">
+            <ul class="menu-category__list">
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-1"></i><span>Мягкая мебель</span></a>
+                <ul class="menu-category__submenu">
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Корпусная мебель</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Мебель для кухни</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Мебель для спальни</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Детская мебель</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Текстиль для дома</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Столы</a></li>
+                </ul>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-2"></i><span>Корпусная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-3"></i><span>Мебель для кухни</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-4"></i><span>Мебель для спальни</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-5"></i><span>Детская мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-6"></i><span>Текстиль для дома</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-7"></i><span>Столы</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-8"></i><span>Стулья и кресла</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-9"></i><span>Мебель из ротанга</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-10"></i><span>Садовая мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-11"></i><span>Декор и предметы интерьера</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-12"></i><span>Офисная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-13"></i><span>Сантехника</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-14"></i><span>Мебель для гостиной</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-15"></i><span>Кованная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-16"></i><span>Бескаркасная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-17"></i><span>Антикварная мебель</span></a>
+              </li>
+            </ul>
+          </div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="under" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a class="under" href="undefined">Каталог</a></li>
+            <li class="breadcrumb-item"><a class="under" href="undefined">Мебель для кухни</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><span>Готовые кухни</span></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="page-title">
+          <button class="toggle-menu toggle-menu--secondary float-right d-md-none js-toggle-menu-second" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#menuTabs"><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span></button>
+          <h1>Вилейская мебельная фабрика (132)</h1>
+        </div>
+        <div class="navbar-tabs-collapse collapse d-md-block" id="menuTabs" role="tablist">
+          <ul class="navbar-tabs nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" id="property-tab" data-toggle="tab" href="#property" role="tab" aria-controls="property" aria-selected="true">Характеристики</a></li>
+            <li class="nav-item"><a class="nav-link" id="modifiers-tab" data-toggle="tab" href="#modifiers" role="tab" aria-controls="modifiers" aria-selected="false">Модификации<span class="nav-link__badge badge badge-primary">8</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="discussions-tab" data-toggle="tab" href="#discussions" role="tab" aria-controls="discussions" aria-selected="false">Обсуждения<span class="nav-link__badge badge badge-primary">11</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Обзоры<span class="nav-link__badge badge badge-primary">2</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Отзывы<span class="nav-link__badge badge badge-primary">123</span></a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="property" role="tabpanel" aria-labelledby="property-tab">
+            <div class="main-product row row--10 mb-4 mb-md-3">
+              <div class="product-gallery col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0 mb-3">
+                <div class="product-gallery__slider swiper-container js-product-gallery">
+                  <div class="swiper-wrapper"><a class="product-gallery__slide swiper-slide" href="images/product/image-1.jpg">
+                      <div class="image-preloader"><span class="xzoom-loading"></span></div><img class="xzoom-gallery" src="images/product/image-1.jpg" xoriginal="images/product/image-1.jpg" alt="#">
+                      <div class="video-contain d-none"></div></a><a class="product-gallery__slide swiper-slide" href="images/product/image-2.jpg">
+                      <div class="image-preloader"><span class="xzoom-loading"></span></div><img class="xzoom-gallery" src="images/product/image-2.jpg" xoriginal="images/product/image-2.jpg" alt="#"></a><a class="product-gallery__slide swiper-slide" href="images/product/image-3.jpg">
+                      <div class="image-preloader"><span class="xzoom-loading"></span></div><img class="xzoom-gallery" src="images/product/image-3.jpg" xoriginal="images/product/image-3.jpg" alt="#"></a><a class="product-gallery__slide swiper-slide" href="images/product/image-4.jpg">
+                      <div class="image-preloader"><span class="xzoom-loading"></span></div><img class="xzoom-gallery" src="images/product/image-4.jpg" xoriginal="images/product/image-4.jpg" alt="#"></a><a class="product-gallery__slide swiper-slide" href="images/product/image-5.jpg">
+                      <div class="image-preloader"><span class="xzoom-loading"></span></div><img class="xzoom-gallery" src="images/product/image-5.jpg" xoriginal="images/product/image-5.jpg" alt="#">
+                      <div class="video-contain d-none"></div></a><a class="product-gallery__slide swiper-slide" href="images/product/image-6.jpg">
+                      <div class="image-preloader"><span class="xzoom-loading"></span></div><img class="xzoom-gallery" src="images/product/image-6.jpg" xoriginal="images/product/image-6.jpg" alt="#"></a>
+                  </div>
+                  <div class="swiper-pagination d-md-none"></div>
+                </div>
+                <div class="product-gallery__thumbs swiper-container js-product-gallery-thumbs d-none d-md-flex">
+                  <div class="swiper-wrapper">
+                    <div class="product-gallery__thumbs-slide swiper-slide pointer" style="background-image: url(images/product/thumb-1.jpg);" data-id="jrbA-6vikD8">
+                      <div class="preview-play"><img class="img-fluid" src="images/video-play.png" alt="#"></div>
+                    </div>
+                    <div class="product-gallery__thumbs-slide swiper-slide pointer" style="background-image: url(images/product/thumb-2.jpg);">
+                    </div>
+                    <div class="product-gallery__thumbs-slide swiper-slide pointer" style="background-image: url(images/product/thumb-3.jpg);">
+                    </div>
+                    <div class="product-gallery__thumbs-slide swiper-slide pointer" style="background-image: url(images/product/thumb-4.jpg);">
+                    </div>
+                    <div class="product-gallery__thumbs-slide swiper-slide pointer" style="background-image: url(images/product/thumb-5.jpg);" data-id="MW2qxM2Dsdw">
+                      <div class="preview-play"><img class="img-fluid" src="images/video-play.png" alt="#"></div>
+                    </div>
+                    <div class="product-gallery__thumbs-slide swiper-slide pointer" style="background-image: url(images/product/thumb-6.jpg);">
+                    </div>
+                  </div>
+                  <div class="product-gallery__thumbs-control"><a class="product-gallery__thumbs-arrow prev js-product-gallery-prev" href="#"><i class="icon icon-chevron-arrow"></i></a><a class="product-gallery__thumbs-arrow next js-product-gallery-next" href="#"><i class="icon icon-chevron-arrow"></i></a></div>
+                </div>
+              </div>
+              <div class="main-product__total col-12 col-md-4 col-lg offset-lg-0 order-md-2 mb-3">
+                <div class="product-total">
+                  <div class="widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                  <div class="product-total__cost">от <span class="bold"> 3 250 </span> руб.</div>
+                  <div class="product-total__date"><i class="s-icon s-icon-time"></i><span> Под заказ. ~ 31 д.</span></div>
+                  <ul class="product-total__props">
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox"/><span class="custom-control-indicator"></span><span class="custom-control-description" data-toggle="popover" data-placement="bottom" data-content="&lt;h4&gt;Tooltip title&lt;/h4&gt;&lt;p&gt;Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.&lt;/p&gt;" data-html="true">Рассрочка</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox"/><span class="custom-control-indicator"></span><a class="custom-control-description" href="#productPopup" data-toggle="modal" role="button">Соединительная планка 7 р.</a>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox"/><span class="custom-control-indicator"></span><a class="custom-control-description" href="#productPopup" data-toggle="modal" role="button">Плинтус</a>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox"/><span class="custom-control-indicator"></span><a class="custom-control-description" href="#productPopup" data-toggle="modal" role="button">Сушка</a>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox"/><span class="custom-control-indicator"></span><a class="custom-control-description" href="#productPopup" data-toggle="modal" role="button">Мойка</a>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox"/><span class="custom-control-indicator"></span><a class="custom-control-description" href="#productPopup" data-toggle="modal" role="button">Смеситель</a>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="product-total__buy">
+                    <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                    <button class="product-btn-card btn btn-primary btn-block text-uppercase bold" type="button">Купить в 1 клик</button>
+                  </div>
+                  <div class="product-total__bonus d-flex"><i class="s-icon s-icon-bonus mr-2"></i> Бонус на карту 100 руб.</div>
+                  <ul class="product-total__bottom d-flex flex-wrap justify-content-between align-items-center">
+                    <li>
+                      <button class="bookmark d-flex align-items-center" type="button"><i class="icon icon-heart mr-2"></i><span>Добавить в избранное</span></button>
+                    </li>
+                    <li>
+                      <button class="compare" type="button"><i class="icon icon-aligned-plus icon-compare"></i></button>
+                    </li>
+                  </ul>
+                  <!-- Модалка - дополнительный товар-->
+                  <div class="product-popup modal fade js-product-popup" id="productPopup" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Добавьте к вашему заказу</h5>
+                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="product-popup__item d-flex flex-column mb-3">
+                            <div class="product-popup__item-img mb-3"><a href="#"><img class="img-fluid" src="images/product/item-1.jpg" alt="#"></a></div>
+                            <div class="media-body">
+                              <h4 class="product-popup__title mb-1"><a class="js-product-title" href="#">title</a></h4>
+                              <div class="product-total"></div>
+                              <div class="widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                              <div class="product-total__cost">от <span class="bold"> 3 250 </span> руб.</div>
+                              <div class="product-total__date mb-3"><i class="s-icon s-icon-time"></i><span> Под заказ. ~ 31 д.</span></div>
+                              <div class="product-total__buy">
+                                <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold js-btn-buy" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                                <button class="product-btn-card btn btn-primary btn-block text-uppercase bold js-btn-buy" type="button">Купить в 1 клик</button>
+                              </div>
+                              <div class="product-total__bonus d-flex"><i class="s-icon s-icon-bonus mr-2"></i> Бонус на карту 100 руб.</div>
+                              <ul class="product-total__bottom d-flex flex-wrap justify-content-between align-items-center">
+                                <li>
+                                  <button class="bookmark d-flex align-items-center" type="button"><i class="icon icon-heart mr-2"></i><span>Добавить в избранное</span></button>
+                                </li>
+                                <li>
+                                  <button class="compare" type="button"><i class="icon icon-aligned-plus icon-compare"></i></button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <ul class="product-popup__props">
+                            <li class="row">
+                              <div class="col bold"><span>Тип товара: </span></div>
+                              <div class="col"><span>готовая</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Вид: </span></div>
+                              <div class="col"><span>линейная</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Материал фасада: </span></div>
+                              <div class="col"><span>акрил</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Тип поверхности:  </span></div>
+                              <div class="col"><span>глянцевая</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Ниши для встроенной техники:  </span></div>
+                              <div class="col"><span>есть</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Парящая кухня: </span></div>
+                              <div class="col"><span>нет</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Страна-производитель: </span></div>
+                              <div class="col"><span>Беларусь</span>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Размеры: </span></div>
+                              <div class="col"><a class="under" href="#">1.0 м., </a><a class="under" href="#">1,5 м., </a><a class="under" href="#">2,6 м.</a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Цвет: </span></div>
+                              <div class="col product-property__color"><i class="pallete-icon" style="background-image: url(images/pallete/item-1.jpg);"></i><i class="pallete-icon" style="background-image: url(images/pallete/item-2.jpg);"></i><i class="pallete-icon" style="background-image: url(images/pallete/item-3.jpg);"></i>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col bold"><span>Продавец: </span></div>
+                              <div class="col"><a class="under" href="#">Вилейская фабрика</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end Модалка - дополнительный товар-->
+                </div>
+              </div>
+              <div class="col-12 col-md-6 offset-md-1 col-lg order-md-1 offset-lg-0 mb-3">
+                <h3 class="main-product__section-title">Характеристики</h3>
+                <ul class="product-property js-product-props" id="productProps">
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Тип товара: </span></div>
+                    <div class="product-property__right col-sm-6"><span>готовая</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Вид: </span></div>
+                    <div class="product-property__right col-sm-6"><span>линейная</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Материал фасада: </span></div>
+                    <div class="product-property__right col-sm-6"><span>акрил</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Тип поверхности:  </span></div>
+                    <div class="product-property__right col-sm-6"><span>глянцевая</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Ниши для встроенной техники:  </span></div>
+                    <div class="product-property__right col-sm-6"><span>есть</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Парящая кухня: </span></div>
+                    <div class="product-property__right col-sm-6"><span>нет</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Страна-производитель: </span></div>
+                    <div class="product-property__right col-sm-6"><span>Беларусь</span>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Размеры: </span></div>
+                    <div class="product-property__right col-sm-6"><a class="under" href="#">1.0 м., </a><a class="under" href="#">1,5 м., </a><a class="under" href="#">2,6 м.</a>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Цвет: </span></div>
+                    <div class="product-property__right col-sm-6 product-property__color"><i class="pallete-icon" style="background-image: url(images/pallete/item-1.jpg);"></i><i class="pallete-icon" style="background-image: url(images/pallete/item-2.jpg);"></i><i class="pallete-icon" style="background-image: url(images/pallete/item-3.jpg);"></i>
+                    </div>
+                  </li>
+                  <li class="row">
+                    <div class="product-property__title bold col-12 col-sm-6"><span>Продавец: </span></div>
+                    <div class="product-property__right col-sm-6"><a class="under" href="#">Вилейская фабрика</a>
+                      <div class="widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="product-property__more"><a class="product-property__more-btn under js-product-props-toggle d-none d-md-flex" href="#" role="button"><span class="text d-none d-md-inline">Все характеристики</span></a></div>
+                <button class="btn btn-outline-secondary btn-lg btn-more btn-block d-md-none js-product-props-toggle" type="button">Подробнее о товаре</button>
+              </div>
+              <div class="col-12 col-xl-7 ml-xl-auto order-md-2 mb-3">
+                <ul class="panel-service nav nav-pils">
+                  <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Оплата</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link__icon"><img class="img-fluid" src="images/icons/security.png" alt="#"></span>Защита покупателя</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Условия возврата</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="modifiers" role="tabpanel" aria-labelledby="modifiers-tab">
+            <div class="wrapper-slider-items">
+              <div class="main-section swiper-container js-row-slider">
+                <div class="items-row items-row--mod row row--sm-2 swiper-wrapper swiper-wrapper flex-nowrap">
+                  <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4 swiper-slide">
+                    <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                      <div class="product-mod__description">
+                        <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                        <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                        <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                          <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4 swiper-slide">
+                    <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                      <div class="product-mod__description">
+                        <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                        <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                        <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                          <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4 swiper-slide">
+                    <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                      <div class="product-mod__description">
+                        <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                        <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                        <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                          <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4 swiper-slide">
+                    <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                      <div class="product-mod__description">
+                        <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                        <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                        <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                          <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4 swiper-slide">
+                    <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                      <div class="product-mod__description">
+                        <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                        <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                        <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                          <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination md-none"></div>
+              </div>
+              <div class="slider-arrow swiper-button-next s-icon d-md-none d-none d-md-flex"><i class="s-icon s-icon-chevron-right"></i></div>
+              <div class="slider-arrow swiper-button-prev s-icon d-md-none d-none d-md-flex"><i class="s-icon s-icon-chevron-left"></i></div>
+            </div>
+            <div class="main-section">
+              <div class="items-row items-row--mod row row--sm-2">
+                <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                  <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                    <div class="product-mod__description">
+                      <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                      <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                      <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                        <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        <div class="product-mod__bottom-right d-flex flex-column flex-md-row">
+                          <div class="input-qty js-input-qty">
+                            <input class="input-qty__input" type="text" value="123">
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-plus"></i></button>
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-minus"></i></button>
+                          </div>
+                          <button class="btn-cart d-none d-md-inline" type="button"><i class="icon icon-cart"></i></button>
+                          <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold d-inline d-md-none" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                  <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                    <div class="product-mod__description">
+                      <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                      <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                      <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                        <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        <div class="product-mod__bottom-right d-flex flex-column flex-md-row">
+                          <div class="input-qty js-input-qty">
+                            <input class="input-qty__input" type="text" value="123">
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-plus"></i></button>
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-minus"></i></button>
+                          </div>
+                          <button class="btn-cart d-none d-md-inline" type="button"><i class="icon icon-cart"></i></button>
+                          <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold d-inline d-md-none" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                  <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                    <div class="product-mod__description">
+                      <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                      <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                      <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                        <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        <div class="product-mod__bottom-right d-flex flex-column flex-md-row">
+                          <div class="input-qty js-input-qty">
+                            <input class="input-qty__input" type="text" value="123">
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-plus"></i></button>
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-minus"></i></button>
+                          </div>
+                          <button class="btn-cart d-none d-md-inline" type="button"><i class="icon icon-cart"></i></button>
+                          <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold d-inline d-md-none" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                  <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                    <div class="product-mod__description">
+                      <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                      <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                      <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                        <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        <div class="product-mod__bottom-right d-flex flex-column flex-md-row">
+                          <div class="input-qty js-input-qty">
+                            <input class="input-qty__input" type="text" value="123">
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-plus"></i></button>
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-minus"></i></button>
+                          </div>
+                          <button class="btn-cart d-none d-md-inline" type="button"><i class="icon icon-cart"></i></button>
+                          <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold d-inline d-md-none" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items-row__item justify-content-center col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                  <div class="product-mod w-100"><a class="product-mod__img text-center" href="#" style="background-image: url(images/product/mod.jpg);"><img class="img-fluid" src="images/product/mod-cover.jpg" alt="#"></a>
+                    <div class="product-mod__description">
+                      <h4 class="product-mod__title"><a href="#">Шкаф угловой М-1560</a></h4>
+                      <div class="product-mod__category"><a href="#">Кухня «Марсель»</a></div>
+                      <div class="product-mod__bottom d-flex flex-column flex-md-row justify-content-between">
+                        <div class="product-mod__cost"><span class="bold">125 </span> руб.</div>
+                        <div class="product-mod__bottom-right d-flex flex-column flex-md-row">
+                          <div class="input-qty js-input-qty">
+                            <input class="input-qty__input" type="text" value="123">
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-plus"></i></button>
+                            <button class="input-qty__btn" type="button"><i class="s-icon s-icon-minus"></i></button>
+                          </div>
+                          <button class="btn-cart d-none d-md-inline" type="button"><i class="icon icon-cart"></i></button>
+                          <button class="btn btn-cart btn-cart--wide btn-block text-uppercase bold d-inline d-md-none" type="button"><i class="icon icon-cart"></i><span class="ml-2">В корзину</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-more-wrap mb-4">
+              <button class="btn btn-outline-secondary btn-lg btn-more btn-block d-md-none" type="button">Посмотреть все элементы</button>
+            </div>
+            <section class="section-description d-none d-md-block">
+              <h4 class="bold">Модульная программа мебели для кухни «Марсель».</h4>
+              <p class="small">Классическая кухня, выдержанная в стиле «кантри». Фасады изготовлены из массива дуба со старением. каркасы — из ДСП. Краситель при изготовлении кухни не используется. Дуб имеет натуральный оттенок. После нанесения лака наносится патина на контур фасада. Патина закрепляется лаком. Впечатление старины подчеркивают грубые ручки «под ковку» и накладные штыревые петли, выполненные под «состаренную бронзу». Кроме того, кухню отличают рамочный каркас, разнообразные элементы с арочными формами и ящиками, декоративные двери, предназначенные для установки на боковых стенках, оригинальный держатель для полотенец, резная полка для вытяжки, открытая сушка для посуды, декоративные элементы с профильной обработкой для столешниц. Ящики и метабоксы комплектуются фурнитурой «Люкс» с доводчиками. Фабрика предлагает дополнительно изготовление декоров из массива дуба для столешниц из керамической плитки.</p>
+              <p class="small">Кухню «Марсель» дополняет большая коллекция, состоящая из обеденных столов, буфетов, тумб различных размеров, которые в отличие от кухни полностью изготовлены из массива, а также мягкая мебель.</p>
+            </section>
+          </div>
+          <div class="tab-pane fade show active" id="discussions" role="tabpanel" aria-labelledby="discussions-tab">
+            <section class="mb-5">
+              <h2>График изменения цены за 3 месяца (6 месяцев)</h2>
+              <canvas id="priceChart"></canvas>
+            </section>
+          </div>
+          <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+            <div class="video-blog">
+              <div class="row">
+                <div class="video-blog__video col-12 col-md-8 col-lg-7">
+                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item js-main-article-video" src="https://www.youtube.com/embed/jrbA-6vikD8?rel=0" allowfullscreen></iframe></div>
+                </div>
+                <div class="video-blog__aside col-12 col-md-4 col-lg-5 js-aside-video-vertical">
+                  <article class="article-video">
+                    <h3 class="article-video__title">Сборка кухни «Марсель», ч.1</h3>
+                    <ul class="article-video__stat d-flex justify-content-between">
+                      <li>
+                        <time class="article-video__date" datetime="2017-11-27">27.11.2017</time>
+                      </li>
+                      <li><a class="article-video__view" href="#">просмотров</a></li>
+                    </ul>
+                    <figure class="article-video__thumb bg-over" style="background-image: url(images/cover.jpg);"><a class="article-video__play youtube-play-custom js-article-video-play" href="#" data-video="https://www.youtube.com/embed/jrbA-6vikD8?rel=0" role="button"></a><img class="img-fluid img-fake" src="images/cover.jpg" alt="#"></figure>
+                  </article>
+                  <article class="article-video">
+                    <h3 class="article-video__title">Сборка кухни «Марсель», ч.2</h3>
+                    <ul class="article-video__stat d-flex justify-content-between">
+                      <li>
+                        <time class="article-video__date" datetime="2017-11-27">27.11.2017</time>
+                      </li>
+                      <li><a class="article-video__view" href="#">просмотров</a></li>
+                    </ul>
+                    <figure class="article-video__thumb bg-over" style="background-image: url(images/cover.jpg);"><a class="article-video__play youtube-play-custom js-article-video-play" href="#" data-video="https://www.youtube.com/embed/MW2qxM2Dsdw?rel=0" role="button"></a><img class="img-fluid img-fake" src="images/cover.jpg" alt="#"></figure>
+                  </article>
+                  <article class="article-video">
+                    <h3 class="article-video__title">Сборка кухни «Марсель», ч.3</h3>
+                    <ul class="article-video__stat d-flex justify-content-between">
+                      <li>
+                        <time class="article-video__date" datetime="2017-11-27">27.11.2017</time>
+                      </li>
+                      <li><a class="article-video__view" href="#">просмотров</a></li>
+                    </ul>
+                    <figure class="article-video__thumb bg-over" style="background-image: url(images/cover.jpg);"><a class="article-video__play youtube-play-custom js-article-video-play" href="#" data-video="https://www.youtube.com/embed/jrbA-6vikD8?rel=0" role="button"></a><img class="img-fluid img-fake" src="images/cover.jpg" alt="#"></figure>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+            <section class="comment-posts">
+              <div class="row">
+                <div class="comment-posts__posts col-12 col-md">
+                  <div class="panel-show d-flex align-items-center">
+                    <h2 class="panel-show__label">Отзывы</h2>
+                    <button class="panel-show__btn btn btn-light"><span class="d-none d-sm-inline">Показать все</span><span class="d-inline d-sm-none">Еще</span></button>
+                  </div>
+                  <div class="comment-post media"><a class="comment-post__thumb d-flex" href="#"><img src="images/avatar.jpg" alt="#"></a>
+                    <div class="media-body">
+                      <div class="comment-post__navbar d-flex flex-wrap align-items-start">
+                        <div class="comment-post__navbar-left mr-3 mb-2"><a class="comment-post__name text-success under" href="#">Липецкая</a>
+                          <time class="comment-post__date" datetime="2017-10-22 12:07">22 октября в 12:07</time>
+                          <div class="comment-post__person-status text-success">Проверенный покупатель</div>
+                        </div>
+                        <div class="clearfix d-block d-sm-none"></div>
+                        <div class="comment-post__rating d-inline-flex align-items-center mr-3"><span class="title">Оценка пользователя:</span><span class="widget-rating m-1 js-rating-comment" data-rateyo-rating="4.4" data-rateyo-read-only="true"></span><span class="text-success count"></span></div>
+                        <div class="comment-post__review mb-2 ml-md-auto">
+                          <div class="review-opinion d-flex align-items-center justify-content-between"><span class="review-opinion__title">Отзыв полезен?</span>
+                            <ul class="review-opinion__list d-flex">
+                              <li><span class="review-opinion__count text-danger">15</span>
+                                <button class="review-opinion__btn btn btn-secondary" type="button">нет</button>
+                              </li>
+                              <li>
+                                <button class="review-opinion__btn btn btn-secondary" type="button">да</button><span class="review-opinion__count text-success">368</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comment-post__message">
+                        <h4>Преимущества:</h4>
+                        <p>Ссылки на мнение (рейтинг) какого-то заштатного Агенства - признание невероятной Престижности</p>
+                      </div>
+                      <div class="comment-post__message">
+                        <h4>Недостатки:</h4>
+                        <p>когда ваше правительство резко уменьшает количество ВУЗов из-за их несостоятельности ваш панегирик российскому высшему образованию просто непонятен.</p>
+                      </div>
+                      <div class="comment-post__message">
+                        <h4></h4>
+                        <p>Ссылки на мнение (рейтинг) какого-то заштатного Агенства - признание невероятной Престижности этой организации типа Международной Академии Образования. Образование в СССР было самым приличным в Мире и часто вполне достаточным для работы во многих отраслях производства и направлений научной деятельности.</p>
+                      </div>
+                      <div class="comment-post__status success"><i class="s-icon s-icon-success mr-1"></i><span class="bold align-top">Конфликт урегулирован</span></div>
+                      <div class="comment-post media"><a class="comment-post__thumb d-flex" href="#"><img src="images/fake.jpg" alt="#"></a>
+                        <div class="media-body">
+                          <div class="comment-post__navbar d-flex flex-wrap align-items-start">
+                            <div class="comment-post__navbar-left mr-3 mb-2"><a class="comment-post__name text-success under" href="#">яков вейц  </a>
+                              <time class="comment-post__date" datetime="2017-10-22 13:17">22 октября в 13:17</time>
+                              <div class="comment-post__person-status text-success">Представитель продавца</div>
+                            </div>
+                            <div class="comment-post__review mb-2 ml-md-auto">
+                              <div class="review-opinion d-flex align-items-center justify-content-between"><span class="review-opinion__title">Отзыв полезен?</span>
+                                <ul class="review-opinion__list d-flex">
+                                  <li><span class="review-opinion__count text-danger">15</span>
+                                    <button class="review-opinion__btn btn btn-secondary" type="button">нет</button>
+                                  </li>
+                                  <li>
+                                    <button class="review-opinion__btn btn btn-secondary" type="button">да</button><span class="review-opinion__count text-success">368</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comment-post__message">
+                            <p>Владимир Лушников, когда дипломы российских вузов можно купить в подземном переходе ,когда в вузы поступают и учатся в них за взятки и каждый зачёт и экзамен имеет определённую цену, когда ваше правительство резко уменьшает количество ВУЗов из-за их несостоятельности ваш панегирик российскому высшему образованию просто непонятен. Снимите розовые очки , когда попадёте на операцию к выпускнику нынешнего ВУЗА. Желаю остаться в живых.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-md-none m-0 divider-horizontal divider-horizontal--2x"></div>
+                  <div class="comment-post media"><a class="comment-post__thumb d-flex" href="#"><img src="images/avatar.jpg" alt="#"></a>
+                    <div class="media-body">
+                      <div class="comment-post__navbar d-flex flex-wrap align-items-start">
+                        <div class="comment-post__navbar-left mr-3 mb-2"><a class="comment-post__name text-success under" href="#">Липецкая</a>
+                          <time class="comment-post__date" datetime="2017-10-22 12:07">22 октября в 12:07</time>
+                          <div class="comment-post__person-status text-success">Проверенный покупатель</div>
+                        </div>
+                        <div class="clearfix d-block d-sm-none"></div>
+                        <div class="comment-post__rating d-inline-flex align-items-center mr-3"><span class="title">Оценка пользователя:</span><span class="widget-rating m-1 js-rating-comment" data-rateyo-rating="4.4" data-rateyo-read-only="true"></span><span class="text-success count"></span></div>
+                        <div class="comment-post__review mb-2 ml-md-auto">
+                          <div class="review-opinion d-flex align-items-center justify-content-between"><span class="review-opinion__title">Отзыв полезен?</span>
+                            <ul class="review-opinion__list d-flex">
+                              <li><span class="review-opinion__count text-danger">15</span>
+                                <button class="review-opinion__btn btn btn-secondary" type="button">нет</button>
+                              </li>
+                              <li>
+                                <button class="review-opinion__btn btn btn-secondary" type="button">да</button><span class="review-opinion__count text-success">368</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comment-post__message">
+                        <h4>Преимущества:</h4>
+                        <p>Ссылки на мнение (рейтинг) какого-то заштатного Агенства - признание невероятной Престижности</p>
+                      </div>
+                      <div class="comment-post__message">
+                        <h4>Недостатки:</h4>
+                        <p>когда ваше правительство резко уменьшает количество ВУЗов из-за их несостоятельности ваш панегирик российскому высшему образованию просто непонятен.</p>
+                      </div>
+                      <div class="comment-post__message">
+                        <h4></h4>
+                        <p>Ссылки на мнение (рейтинг) какого-то заштатного Агенства - признание невероятной Престижности этой организации типа Международной Академии Образования. Образование в СССР было самым приличным в Мире и часто вполне достаточным для работы во многих отраслях производства и направлений научной деятельности.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-100 d-md-none m-0 divider-horizontal divider-horizontal--2x"></div>
+                </div>
+                <div class="comments-posts__stars col-12 col-md col-fixed">
+                  <div class="stars-rating">
+                    <h3 class="stars-rating__title">Оценки</h3>
+                    <ul class="stars-rating__list d-table">
+                      <li class="d-table-row">
+                        <div class="widget-rating d-table-cell align-middle js-stars-rating-total pr-3 pb-2" data-rateyo-rating="5" data-rateyo-read-only="true"></div>
+                        <div class="stars-rating__percentage d-table-cell align-middle pr-3 pb-2">60%</div>
+                        <div class="stars-rating__review d-table-cell align-middle ml-auto pb-2"><a href="#">18 отзывов</a></div>
+                      </li>
+                      <li class="d-table-row">
+                        <div class="widget-rating d-table-cell align-middle js-stars-rating-total pr-3 pb-2" data-rateyo-rating="4" data-rateyo-read-only="true"></div>
+                        <div class="stars-rating__percentage d-table-cell align-middle pr-3 pb-2">20%</div>
+                        <div class="stars-rating__review d-table-cell align-middle ml-auto pb-2"><a href="#">8 отзывов</a></div>
+                      </li>
+                      <li class="d-table-row">
+                        <div class="widget-rating d-table-cell align-middle js-stars-rating-total pr-3 pb-2" data-rateyo-rating="3" data-rateyo-read-only="true"></div>
+                        <div class="stars-rating__percentage d-table-cell align-middle pr-3 pb-2">10%</div>
+                        <div class="stars-rating__review d-table-cell align-middle ml-auto pb-2"><a href="#">4 отзывов</a></div>
+                      </li>
+                      <li class="d-table-row">
+                        <div class="widget-rating d-table-cell align-middle js-stars-rating-total pr-3 pb-2" data-rateyo-rating="2" data-rateyo-read-only="true"></div>
+                        <div class="stars-rating__percentage d-table-cell align-middle pr-3 pb-2">5%</div>
+                        <div class="stars-rating__review d-table-cell align-middle ml-auto pb-2"><a href="#">2 отзывов</a></div>
+                      </li>
+                      <li class="d-table-row">
+                        <div class="widget-rating d-table-cell align-middle js-stars-rating-total pr-3 pb-2" data-rateyo-rating="1" data-rateyo-read-only="true"></div>
+                        <div class="stars-rating__percentage d-table-cell align-middle pr-3 pb-2">5%</div>
+                        <div class="stars-rating__review d-table-cell align-middle ml-auto pb-2"><a href="#">2 отзывов</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-more-wrap">
+                <button class="btn btn-outline-secondary btn-lg btn-more btn-block d-md-none" type="button">Все отзывы о товаре (56)</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <section class="product-related mb-md-4">
+        <div class="container">
+          <h2>Похожие товары</h2>
+          <div class="row flex-nowrap no-gutters">
+            <ul class="product-related__props-headings col align-self-end col-fixed">
+              <li>Рейтинг клиентов</li>
+              <li>Цена</li>
+              <li>Цвет</li>
+              <li>Вид</li>
+              <li>Наличие</li>
+            </ul>
+            <div class="product-related__slider col">
+              <div class="swiper-container js-product-related">
+                <div class="items-row row swiper-wrapper flex-nowrap">
+                  <div class="items-row__item swiper-slide justify-content-center col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product w-100 product--related">
+                      <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                      <figure class="product__img mb-3"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                      <div class="product__description">
+                        <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                        <div class="product__category m-0 mb-4"><a href="#">Готовые кухни</a></div>
+                      </div>
+                      <div class="product__btn-buy mb-md-3">
+                        <button class="btn-cart w-100"><i class="icon icon-cart"></i><span class="btn-cart__text d-none d-md-inline-block">В корзину</span></button>
+                      </div>
+                      <ul class="product__props-related">
+                        <li class="d-flex align-items-center"><span class="widget-rating m-1 js-rating" data-rateyo-rating="4.4" data-rateyo-read-only="true"></span><a href="#">(12)</a></li>
+                        <li class="cost">от<span class="bold"> 3250</span> руб.</li>
+                        <li><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                        </li>
+                        <li class="type">Линейная</li>
+                        <li class="date">Под заказ: ~ 25 д.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="items-row__item swiper-slide justify-content-center col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product w-100 product--related">
+                      <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                      <figure class="product__img mb-3"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                      <div class="product__description">
+                        <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                        <div class="product__category m-0 mb-4"><a href="#">Готовые кухни</a></div>
+                      </div>
+                      <div class="product__btn-buy mb-md-3">
+                        <button class="btn-cart w-100"><i class="icon icon-cart"></i><span class="btn-cart__text d-none d-md-inline-block">В корзину</span></button>
+                      </div>
+                      <ul class="product__props-related">
+                        <li class="d-flex align-items-center"><span class="widget-rating m-1 js-rating" data-rateyo-rating="4.4" data-rateyo-read-only="true"></span><a href="#">(12)</a></li>
+                        <li class="cost">от<span class="bold"> 3250</span> руб.</li>
+                        <li><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                        </li>
+                        <li class="type">Линейная</li>
+                        <li class="date">Под заказ: ~ 25 д.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="items-row__item swiper-slide justify-content-center col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product w-100 product--related">
+                      <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                      <figure class="product__img mb-3"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                      <div class="product__description">
+                        <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                        <div class="product__category m-0 mb-4"><a href="#">Готовые кухни</a></div>
+                      </div>
+                      <div class="product__btn-buy mb-md-3">
+                        <button class="btn-cart w-100"><i class="icon icon-cart"></i><span class="btn-cart__text d-none d-md-inline-block">В корзину</span></button>
+                      </div>
+                      <ul class="product__props-related">
+                        <li class="d-flex align-items-center"><span class="widget-rating m-1 js-rating" data-rateyo-rating="4.4" data-rateyo-read-only="true"></span><a href="#">(12)</a></li>
+                        <li class="cost">от<span class="bold"> 3250</span> руб.</li>
+                        <li><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                        </li>
+                        <li class="type">Линейная</li>
+                        <li class="date">Под заказ: ~ 25 д.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="items-row__item swiper-slide justify-content-center col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product w-100 product--related">
+                      <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                      <figure class="product__img mb-3"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                      <div class="product__description">
+                        <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                        <div class="product__category m-0 mb-4"><a href="#">Готовые кухни</a></div>
+                      </div>
+                      <div class="product__btn-buy mb-md-3">
+                        <button class="btn-cart w-100"><i class="icon icon-cart"></i><span class="btn-cart__text d-none d-md-inline-block">В корзину</span></button>
+                      </div>
+                      <ul class="product__props-related">
+                        <li class="d-flex align-items-center"><span class="widget-rating m-1 js-rating" data-rateyo-rating="4.4" data-rateyo-read-only="true"></span><a href="#">(12)</a></li>
+                        <li class="cost">от<span class="bold"> 3250</span> руб.</li>
+                        <li><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i></span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                        </li>
+                        <li class="type">Линейная</li>
+                        <li class="date">Под заказ: ~ 25 д.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-controls d-none d-md-block">
+                <div class="slider-arrow swiper-button-next s-icon d-md-none"><i class="s-icon s-icon-chevron-right"></i></div>
+                <div class="slider-arrow swiper-button-prev s-icon d-md-none"><i class="s-icon s-icon-chevron-left"></i></div>
+              </div>
+            </div>
+            <div class="swiper-pagination d-md-none"></div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <h2>Рекомендуемые товары</h2>
+        <div class="wrapper-slider-items">
+          <div class="main-section swiper-container js-row-slider">
+            <div class="items-row row swiper-wrapper swiper-wrapper flex-nowrap">
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                      <div class="product__stock"><i class="s-icon s-icon-stock"></i><span> в наличии</span></div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded active"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83 вторая строка</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                      <div class="product__stock"><i class="s-icon s-icon-stock"></i><span> в наличии</span></div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded active"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83 вторая строка</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded active"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83 вторая строка</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination d-md-none"></div>
+          </div>
+          <div class="slider-arrow swiper-button-next s-icon d-md-none d-none d-md-flex"><i class="s-icon s-icon-chevron-right"></i></div>
+          <div class="slider-arrow swiper-button-prev s-icon d-md-none d-none d-md-flex"><i class="s-icon s-icon-chevron-left"></i></div>
+        </div>
+        <h2>Просмотренные товары</h2>
+        <div class="wrapper-slider-items">
+          <div class="main-section swiper-container js-row-slider">
+            <div class="items-row row swiper-wrapper swiper-wrapper flex-nowrap">
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                      <div class="product__stock"><i class="s-icon s-icon-stock"></i><span> в наличии</span></div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded active"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83 вторая строка</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                      <div class="product__stock"><i class="s-icon s-icon-stock"></i><span> в наличии</span></div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded active"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83 вторая строка</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="items-row__item justify-content-center swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2-4">
+                <div class="product w-100">
+                  <button class="product__bookmark-rounded btn-bookmark-rounded active"><i class="icon icon-heart"></i></button>
+                  <figure class="product__img"><a class="product__img-link" href="#" style="background-image: url(images/product/item-1.jpg);"></a></figure>
+                  <div class="product__description">
+                    <h4 class="product__title"><a href="#">Кухня Dames Вариант 83 вторая строка</a></h4>
+                    <div class="product__category"><a href="#">Фотоаппараты</a></div>
+                    <hr class="divider-horizontal">
+                    <ul class="product__props d-none d-md-block">
+                      <li class="product__props-item"><span>Бренд: </span><span><a href="#">Dames</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Тип товара: </span><span><a href="#">под заказ</a></span>
+                      </li>
+                      <li class="product__props-item"><span>Вид: </span><span><a href="#">линейная</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Материал фасада: </span><span><a href="#">акрил</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Тип поверхности: </span><span><a href="#">нет</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Страна-производитель: </span><span><a href="#">Беларусь</a></span>
+                      </li>
+                      <li class="product__props-item d-none"><span>Цвет: </span><span class="product__props-pallete"><i class="product__props-pallete-item" style="background-image: url(images/color-1.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-2.jpg);"></i><i class="product__props-pallete-item" style="background-image: url(images/color-3.jpg);"></i></span>
+                      </li>
+                      <li class="product__props-item pointer js-toggle-show-list"><span>...</span></li>
+                    </ul>
+                  </div>
+                  <ul class="product__bottom d-flex justify-content-between align-items-end">
+                    <li>
+                      <div class="product__rating widget-rating js-rating" data-rateyo-rating="3.5" data-rateyo-read-only="true"></div>
+                      <div class="product__cost">от <span class="bold"> 3 250</span> руб.</div>
+                    </li>
+                    <li class="text-right">
+                      <button class="product__btn-compare btn-compare"><i class="btn-compare__icon icon icon-aligned-plus"></i></button>
+                      <button class="product__btn-cart btn-cart"><i class="icon icon-cart"></i><span class="btn-cart__text d-none">В корзину</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination d-md-none"></div>
+          </div>
+          <div class="slider-arrow swiper-button-next s-icon d-md-none d-none d-md-flex"><i class="s-icon s-icon-chevron-right"></i></div>
+          <div class="slider-arrow swiper-button-prev s-icon d-md-none d-none d-md-flex"><i class="s-icon s-icon-chevron-left"></i></div>
+        </div>
+        <div class="b-features swiper-container js-mobile-features js-mobile-slider main-content__row-features">
+          <div class="b-features__list swiper-wrapper">
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/tracker.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Доставка </span><span>по всей РБ</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/security.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Программа</span><span>защиты</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/brands.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Представлены </span><span>только производители</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/refresh.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Возврат и </span><span>обмен</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/label.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Лучшие </span><span>цены</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination d-md-none"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+          <div class="col-12 col-md-4 justify-content-center justify-content-md-start">
+            <ul class="page-footer__menu">
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Покупателю</a></li>
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Продавцу</a></li>
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">О нас</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-center">
+            <div class="page-footer__copyright">© 2017 Company.by</div>
+          </div>
+          <div class="col-12 col-md-4 d-none d-md-flex justify-content-center justify-content-md-end"><a class="page-footer___callback pointer js-toggle-callback" data-toggle="popover" data-container="body" role="button" data-html="true">Задать нам вопрос</a>
+            <script id="popover-content" type="text/template">
+              <form class="callback-panel modal-content" action="#" method="POST">
+                <div class="modal-header">
+                  <h5 class="modal-title">Оставьте нам сообщение</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body js-callback-scrollbar">
+                  <div class="modal-body__content">
+                    <div class="form-group"><span class="label">Ваше имя</span>
+                      <input class="form-control" type="text" name="field_name">
+                    </div>
+                    <div class="form-group"><span class="label">Адрес эл. почты*</span>
+                      <input class="form-control" type="email" name="field_email" required>
+                    </div>
+                    <div class="form-group"><span class="label">Чем мы можем Вам помочь?*</span>
+                      <textarea class="form-control" name="field_message" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group"><span class="label">Прикрепленные файлы</span>
+                      <label class="custom-file custom-file--dashed">
+                        <input class="custom-file-input" type="file"><span class="custom-file-control text-center pointer"><i class="icon"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" height="13px" width="13px" viewBox="0 0 14 14"><style>.st0{height:10px; fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round}</style><path class="st0" d="M8 4.5L4.5 8.1c-.4.4-.4 1.1 0 1.6s1.1.3 1.5-.1l4.9-4.9c.8-.8.8-2.3 0-3.1s-2.3-.8-3.1 0L2.5 6.9c-1.3 1.3-1.3 3.4 0 4.7s3.4 1.3 4.7 0l4-4"/></svg></i>Добавьте файл</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-end">
+                  <button class="callback-message__submit btn btn-primary pl-3 pr-3 btn-block" type="submit">Отправить</button>
+                </div>
+              </form>
+            </script>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-popup modal fade js-modal-popup" tab-index="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header align-items-stretch justify-content-end">
+            <button class="close" data-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row">
+              <div class="col-auto pr-0"><img class="img-fluid" src="images/icons/security.png"></div>
+              <div class="col">
+                <h4>Программа защиты</h4>
+                <p>Если вы столкнулись с недобросовестным продавцом, и не получили товар после оплаты, пожалуйста, напишите нам на<a class="text-success" href="#"> support@alles.ru.</a></p>
+              </div>
+              <div class="col-12">
+                <h5>Правила программы:</h5>
+                <ul class="mb-4">
+                  <li>1. Все позиции заказа оформлены на сайте alles.ru через корзину.
+                  </li>
+                  <li>2. Оплата товара была произведена банковским или почтовым переводом по реквизитам, указанным в личных данных продавца или предоставленным продавцом через площадку (при обработке заказа/ сообщения), и покупатель располагает всеми необходимыми документами, подтверждающими факт оплаты на полученные реквизиты.
+                  </li>
+                  <li>3. Покупатель предоставляет копию заверенного заявления в правоохранительные органы по вопросу мошенничества относительно продавца и выдержку с ЕРДР с указанным номером дела.
+                  </li>
+                  <li>4. Товар заказан в Украине и должен был быть доставлен на территорию Украины.
+                  </li>
+                  <li>5. Заказ оформлен не более 3 месяцев до момента обращения покупателя по Программе защиты.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <ul>
+              <li>Обратите внимание, что Программа защиты работает на заказы, которые не были доставлены продавцами.</li>
+              <li>По вопросам обмена/возврата рекомендуем обратиться к продавцу.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/moment.min.js"></script>
+    <script src="scripts/ofi.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.mousewheel.min.js"></script>
+    <script src="scripts/popper.js/dist/umd/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/velocity.min.js"></script>
+    <script src="scripts/validator.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
+    <script src="scripts/jquery.mCustomScrollbar.min.js"></script>
+    <script src="scripts/jquery.rateyo.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/xzoom.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/chartjs.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

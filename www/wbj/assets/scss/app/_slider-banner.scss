@@ -1,0 +1,158 @@
+.bx-wrapper {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  margin-bottom: 0;
+
+  .bx-loading{background-image:url()};
+  .bx-prev{background-image:url()};
+  .bx-next{background-image:url()};
+  .bx-start{background-image:url()};
+  .bx-stop{background-image:url()};
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 6px;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+
+  &::after {
+    content: '';
+    display: block;
+    border: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background-color: transparent;
+
+  &::after {
+    border-color: $success;
+    background: $success;
+  }
+}
+
+.intro-slider {
+  overflow: hidden;
+  color: #fff;
+
+  .page-content .card & {
+    margin-bottom: 2.5rem;
+    border-radius: 0.25rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    transition: 1500ms linear;
+
+    .page-load & {
+      opacity: 0;
+    }
+
+    .bx-viewport & {
+      display: block;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    height: 43vw!important;
+    max-height: 340px;
+    width: 100%!important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  &__slide-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 670px;
+    padding: 3.25rem 0 5rem;
+    z-index: 2;
+  }
+
+  &__category {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    margin-bottom: 2.25rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  &__btn-wrap {
+    .btn {
+      max-width: 170px;
+      width: 100%;
+    }
+  }
+
+  .bx-wrapper .bx-controls-auto,
+  .bx-wrapper .bx-pager {
+    bottom: calc(1.75rem - 6px);
+  }
+
+  @include media('<sm') {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+.sidebar__banners {
+  position: relative;
+  // height: 100%;
+
+  // .aside-banner {
+  //   height: 100%;
+  //   margin-bottom: 0!important;
+
+  //   *:not(img) {
+  //     height: 100%;
+  //   }
+  // }
+}
+
+.aside-banner__carousel {
+  overflow: hidden;
+}
+
+.aside-banner__link {
+  display: block;
+  // height: 100%;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+
+  img {
+    height: auto;
+  }
+}
+
+@include media('<lgx') {
+  .aside-banner__link {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}

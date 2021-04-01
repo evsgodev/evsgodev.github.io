@@ -1,0 +1,148 @@
+/**
+* Modals
+*/
+
+$modal-duration: 200ms;
+
+.modal {
+  .close {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2.5rem 2rem;
+    pointer-events: auto;
+    border: none;
+    border-radius: 0;
+    @include bx-shadow;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 0;
+    border: none;
+  }
+
+  .modal-header {
+    margin-bottom: 1.50rem;
+
+    .modal-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .modal-content-form {
+    flex-grow: 1;
+  }
+
+  .modal-footer {
+    > {
+      :not(:last-child) {
+        margin-right: 10px;
+      }
+      :not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    .btn {
+      flex-grow: 1;
+      max-width: 210px;
+    }
+  }
+}
+
+
+/**
+* Modal Panels
+*/
+
+.modal-panel {
+  max-width: 100%;
+  padding-right: 0!important;
+
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    pointer-events: visible;
+    margin-left: auto;
+    transform: translateX(100%);
+  }
+
+  .modal-dialog {
+    max-width: 440px;
+  }
+
+  .modal-content {
+    width: 100%;
+    min-height: 100%;
+    box-shadow: none;
+  }
+
+  .modal-header {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .modal-body {
+    flex-grow: 1;
+  }
+
+  &.show {
+    .modal-dialog {
+      transition: transform $modal-duration ease-in-out;
+      transform: translateX(0);
+    }
+  }
+
+  &.modal-page {
+    left: calc(#{$sidebar-width} + 40px);
+
+    .modal-dialog {
+      max-width: 100%;
+      transition: transform $modal-duration * 1.5 ease-in-out;
+    }
+  }
+
+  &.modal-auto {
+    left: auto;
+
+    .modal-dialog {
+      max-width: none;
+    }
+  }
+
+  &.modal-lg {
+    .modal-dialog {
+      max-width: 500px;
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: $gray-600;
+  opacity: 0.5;
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <title>project</title>
+    <!-- Edge and IE-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="description">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/xzoom.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__row row justify-content-center align-items-center">
+          <div class="page-header__navbar dropdown col-md-3 col-lg-4 col-xl-3 d-inline-flex align-items-center">
+            <div class="page-header__logo d-inline-flex flex-md-wrap flex-lg-nowrap align-items-center"><a href="index.html"><img class="page-header__logo-image" src="images/logo.png" alt="#"></a><span class="page-header__logo-slogan">Производителей много — сайт один.</span></div>
+            <button class="page-header__toggle-menu toggle-menu d-md-none" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#siteMenu"><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span></button>
+            <nav class="site-menu collapse d-md-none" id="siteMenu">
+              <div class="site-menu__header d-flex justify-content-between align-items-center"><a class="site-menu__logo" href="#"><img class="img-fluid" src="images/logo.png" alt="#"></a></div>
+              <ul class="site-menu__list">
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-1"></i><span class="site-menu__link-text">Мягкая мебель</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-2"></i><span class="site-menu__link-text">Корпусная мебель</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-3"></i><span class="site-menu__link-text">Мебель для кухни</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-4"></i><span class="site-menu__link-text">Мебель для спальни</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-5"></i><span class="site-menu__link-text">Детская мебель</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-6"></i><span class="site-menu__link-text">Текстиль для дома</span></a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="#"><i class="site-menu__link-icon s-icon s-icon-cat-7"></i><span class="site-menu__link-text">Столы</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="page-header__search col-md-4 col-xl-3">
+            <form class="header-search" action="/" method="GET">
+              <input class="header-search__input form-control" type="search" name="field_search" placeholder="Введите запрос">
+              <button class="header-search__subject btn btn-primary" type="button"><i class="icon icon-search"></i></button>
+            </form>
+          </div>
+          <div class="page-header__contacts-row col-md-5 col-lg-4 col-xl-3 d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-end justify-content-lg-start align-items-center">
+            <ul class="page-header__contacts order-md-2">
+              <li class="page-header__contacts-item"><a class="page-header__number js-location__number" href="tel:80291550456">8 (029) 155-04-56</a></li>
+              <li class="page-header__contacts-item"><span class="page-header__mode">Работаем с 9.00 до 19.00</span></li>
+            </ul>
+            <div class="header-location dropdown js-location"><a class="header-location__toggle js-location__input" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="header-location__toggle-text">Старые Дороги</span><i class="header-location__toggle-caret s-icon s-icon-caret"></i></a>
+              <ul class="header-location__list dropdown-menu js-location__select">
+                <li class="dropdown-item" data-select="select" data-value="Старые Дороги" data-number="8 (029) 155-04-56">Старые Дороги</li>
+                <li class="dropdown-item" data-select="" data-value="Красноярск" data-number="8 (029) 155-04-56">Красноярск</li>
+                <li class="dropdown-item" data-select="" data-value="Сызрань" data-number="8 (029) 235-04-23">Сызрань</li>
+                <li class="dropdown-item" data-select="" data-value="Красноярск" data-number="8 (029) 122-04-43">Красноярск</li>
+                <li class="dropdown-item" data-select="" data-value="Нижний" data-number="8 (029) 155-34-23">Нижний</li>
+                <li class="dropdown-item" data-select="" data-value="Новгород" data-number="8 (029) 155-22-22">Новгород</li>
+                <li class="dropdown-item" data-select="" data-value="Новокузнецк" data-number="8 (029) 155-11-11">Новокузнецк</li>
+                <li class="dropdown-item" data-select="" data-value="Новороссийск" data-number="8 (029) 155-32-22">Новороссийск</li>
+                <li class="dropdown-item" data-select="" data-value="Новосибирск" data-number="8 (029) 155-04-55">Новосибирск</li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-header__panel panel-user col-12 col-xl-3">
+            <div class="panel-user__list">
+              <div class="panel-user__item">
+                <div class="panel-user__regist d-inline-flex flex-column"><a class="panel-user__regist-link" href="logon.html">Вход</a><a class="panel-user__regist-link" href="signup.html">Регистрация</a>
+                </div>
+              </div>
+              <div class="panel-user__item"><a class="panel-user__link" href="#"><i class="icon icon-aligned"></i><span class="panel-user__count">0</span></a></div>
+              <div class="panel-user__item"><a class="panel-user__link" href="#"><i class="icon icon-heart"></i><span class="panel-user__count">0</span></a></div>
+              <div class="panel-user__item"><a class="panel-user__link" href="#"><i class="icon icon-cart"></i><span class="panel-user__count">12</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="breadcrumbs-wrap container d-none d-md-block">
+        <nav class="breadcrumb-nav d-flex dropdown js-dropdown-fix">
+          <button class="toggle-menu" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#menuCategory"><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span><span class="toggle-menu__bar"></span></button>
+          <div class="menu-category menu-category--menu collapse" id="menuCategory">
+            <ul class="menu-category__list">
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-1"></i><span>Мягкая мебель</span></a>
+                <ul class="menu-category__submenu">
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Корпусная мебель</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Мебель для кухни</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Мебель для спальни</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Детская мебель</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Текстиль для дома</a></li>
+                  <li class="menu-category__item"><a class="menu-category__link" href="#">Столы</a></li>
+                </ul>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-2"></i><span>Корпусная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-3"></i><span>Мебель для кухни</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-4"></i><span>Мебель для спальни</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-5"></i><span>Детская мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-6"></i><span>Текстиль для дома</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-7"></i><span>Столы</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-8"></i><span>Стулья и кресла</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-9"></i><span>Мебель из ротанга</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-10"></i><span>Садовая мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-11"></i><span>Декор и предметы интерьера</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-12"></i><span>Офисная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-13"></i><span>Сантехника</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-14"></i><span>Мебель для гостиной</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-15"></i><span>Кованная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-16"></i><span>Бескаркасная мебель</span></a>
+              </li>
+              <li class="menu-category__item"><a class="menu-category__link" href="#"><i class="menu-category__item-icon s-icon s-icon-cat-17"></i><span>Антикварная мебель</span></a>
+              </li>
+            </ul>
+          </div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="under" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a class="under" href="undefined">Каталог</a></li>
+            <li class="breadcrumb-item"><a class="under" href="undefined">Мебель для кухни</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><span>Готовые кухни</span></li>
+          </ol>
+        </nav>
+      </div>
+      <button class="btn-scroll-up js-scroll-up d-none d-sm-block" type="button"></button>
+      <div class="container">
+        <div class="page-title">
+          <h1>Покупателю</h1>
+        </div>
+        <div class="how-to-buy-content">
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-2">
+              <nav class="sticky-nav js-sticky-nav">
+                <h5>Поиск и заказ</h5>
+                <ul class="sticky-nav__list">
+                  <li class="sticky-nav__item"><a class="nav-link py-1 px-0" href="#payment"><span>Оплата и доставка</span></a></li>
+                  <li class="sticky-nav__item"><a class="nav-link py-1 px-0" href="#returnItem"><span>Возврат и обмен</span></a></li>
+                  <li class="sticky-nav__item"><a class="nav-link py-1 px-0" href="#testimonials"><span>Отзывы</span></a></li>
+                  <li class="sticky-nav__item"><a class="nav-link py-1 px-0" href="#program"><span>Программа защиты</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 col-md-9 col-lg-10">
+              <section class="site-details" id="searchItem">
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <h4>Поиск товара</h4>
+                    <p>Найти товар можно с помощью строки поиска и меню категорий, которые всегда под рукой на любой странице.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/1.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-1.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <p>Фильтры слева помогут выбрать товар по характеристикам, бренду, диапазону цен или стране производства.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/2.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-2.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <p>Товары можно сортировать в удобном порядке, например сначала дешевые, или популярные, или со скидкой.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/3.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-3.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-bottom mb-0">
+              </section>
+              <section class="site-details" id="payment">
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <h4>Оплата и доставка</h4>
+                    <p>На Alles.by 12 148 продавцов, и именно они отправляют вам заказы. Ознакомиться с доступными способами оплаты и условиями доставки, которые предлагает продавец, вы можете на странице производителя.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/4.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-4.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <p>Выбрать, как оплатить и доставить товар, можно при оформлении заказа, нажав на кнопку «Купить». Если у вас остались вопросы перед заказом позвоните продавцу.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/5.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-5.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-bottom mb-0">
+              </section>
+              <section class="site-details" id="returnItem">
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <h4>Возврат и обмен</h4>
+                    <p>Условия возврата и обмена, которые предлагает продавец, вы найдете на странице товара.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/6.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-6.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="site-details__footer">
+                  <p>Согласно Закону Украины «О защите прав потребителей» покупатель имеет право обменять товар на аналогичный в течение 14 дней, если купленный товар не подошел по форме, габаритам, фасону, цвету, размеру или по другим причинам, и если сохранен товарный вид, ярлыки и расчетный документ, выданный продавцом вместе с товаром. Исключение составляют товары, не подлежащие возврату по Закону, их перечень вы можете посмотреть по ссылке.</p>
+                </div>
+                <hr class="hr-bottom mb-0">
+              </section>
+              <section class="site-details" id="testimonials">
+                <div class="site-details__row row">
+                  <div class="col-12 col-lg-3">
+                    <h4>Отзывы</h4>
+                    <p>На Alles.by более 20 000 реальных отзывов о продавцах. Мы тщательно проверяем их достоверность, оставить отзыв на Bigl.ua могут только покупатели после заказа. Рекомендуем ориентироваться на отзывы для выбора лучшего магазина по качеству обслуживания.</p>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="site-details__img">
+                      <button class="site-details__toggle pointer js-toggle-zoom" type="button"><i class="icon s-icon s-icon-thumb-cursor"></i></button><img class="img-scene img-fluid" src="images/zooms/7.jpg" alt="#"><img class="img-scene-zoom" src="images/zooms/zoom-7.jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-bottom mb-0">
+              </section>
+              <section class="site-details" id="program">
+                <div class="site-details__row row">
+                  <div class="col-3 col-sm-3 mx-auto mb-4 ml-md-0 text-center"><img class="img-fluid" src="images/security-big.png" alt="#"></div>
+                  <div class="col-12 col-sm-9">
+                    <h4>Правила программы:</h4>
+                    <p>Alles.by возмещает до 1 000 рублей независимо от количества заказанных товаров. Если вы столкнулись с недобросовестным продавцом, и не получили товар после оплаты, пожалуйста, напишите нам на support@alles.by.</p>
+                    <h5>Правила программы:</h5>
+                    <ul class="program-list mb-5">
+                      <li class="d-flex">
+                        <div class="mr-3">1.</div>
+                        <div class="right">
+                          <p>Все позиции заказа оформлены на сайте Bigl.ua через корзину.</p>
+                          <p>Оплата товара была произведена банковским или почтовым переводом по реквизитам, указанным в личных данных продавца или предоставленным продавцом через площадку (при обработке заказа/ сообщения), и покупатель располагает всеми необходимыми документами, подтверждающими факт оплаты на полученные реквизиты.</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="mr-3">2.</div>
+                        <div class="right">
+                          <p>Покупатель предоставляет копию заверенного заявления в правоохранительные органы по вопросу мошенничества относительно продавца и выдержку с ЕРДР с указанным номером дела.</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="mr-3">3.</div>
+                        <div class="right">
+                          <p>Товар заказан в Беларуси и должен был быть доставлен на территорию Беларуси.</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="mr-3">4.</div>
+                        <div class="right">
+                          <p>Заказ оформлен не более 3 месяцев до момента обращения покупателя по Программе защиты.</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <p class="mb-5">Обратите внимание, что Программа защиты работает на заказы, которые не были доставлены продавцами. По вопросам обмена/возврата рекомендуем обратиться к продавцу.</p><a class="back-to-catalog btn btn-warning pointer px-5 d-block mx-auto ml-md-0" role="button">К покупкам</a>
+                  </div>
+                </div>
+                <hr class="hr-bottom mb-0">
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="b-features swiper-container js-mobile-features js-mobile-slider main-content__row-features mb-0">
+          <div class="b-features__list swiper-wrapper">
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/tracker.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Доставка </span><span>по всей РБ</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/security.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Программа</span><span>защиты</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/brands.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Представлены </span><span>только производители</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/refresh.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Возврат и </span><span>обмен</span></a>
+              </div>
+            </div>
+            <div class="b-features__item swiper-slide col text-center">
+              <div class="b-features__item-media">
+                <div class="b-features__object"><img src="images/icons/label.png" alt="#">
+                </div><a class="b-features__link" href="#"><span>Лучшие </span><span>цены</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination d-md-none"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+          <div class="col-12 col-md-4 justify-content-center justify-content-md-start">
+            <ul class="page-footer__menu">
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Покупателю</a></li>
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Продавцу</a></li>
+              <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">О нас</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-center">
+            <div class="page-footer__copyright">© 2017 Company.by</div>
+          </div>
+          <div class="col-12 col-md-4 d-none d-md-flex justify-content-center justify-content-md-end"><a class="page-footer___callback pointer js-toggle-callback" data-toggle="popover" data-container="body" role="button" data-html="true">Задать нам вопрос</a>
+            <script id="popover-content" type="text/template">
+              <form class="callback-panel modal-content" action="#" method="POST">
+                <div class="modal-header">
+                  <h5 class="modal-title">Оставьте нам сообщение</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body js-callback-scrollbar">
+                  <div class="modal-body__content">
+                    <div class="form-group"><span class="label">Ваше имя</span>
+                      <input class="form-control" type="text" name="field_name">
+                    </div>
+                    <div class="form-group"><span class="label">Адрес эл. почты*</span>
+                      <input class="form-control" type="email" name="field_email" required>
+                    </div>
+                    <div class="form-group"><span class="label">Чем мы можем Вам помочь?*</span>
+                      <textarea class="form-control" name="field_message" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group"><span class="label">Прикрепленные файлы</span>
+                      <label class="custom-file custom-file--dashed">
+                        <input class="custom-file-input" type="file"><span class="custom-file-control text-center pointer"><i class="icon"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" height="13px" width="13px" viewBox="0 0 14 14"><style>.st0{height:10px; fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round}</style><path class="st0" d="M8 4.5L4.5 8.1c-.4.4-.4 1.1 0 1.6s1.1.3 1.5-.1l4.9-4.9c.8-.8.8-2.3 0-3.1s-2.3-.8-3.1 0L2.5 6.9c-1.3 1.3-1.3 3.4 0 4.7s3.4 1.3 4.7 0l4-4"/></svg></i>Добавьте файл</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-end">
+                  <button class="callback-message__submit btn btn-primary pl-3 pr-3 btn-block" type="submit">Отправить</button>
+                </div>
+              </form>
+            </script>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-popup modal fade js-modal-popup" tab-index="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header align-items-stretch justify-content-end">
+            <button class="close" data-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row">
+              <div class="col-auto pr-0"><img class="img-fluid" src="images/icons/security.png"></div>
+              <div class="col">
+                <h4>Программа защиты</h4>
+                <p>Если вы столкнулись с недобросовестным продавцом, и не получили товар после оплаты, пожалуйста, напишите нам на<a class="text-success" href="#"> support@alles.ru.</a></p>
+              </div>
+              <div class="col-12">
+                <h5>Правила программы:</h5>
+                <ul class="mb-4">
+                  <li>1. Все позиции заказа оформлены на сайте alles.ru через корзину.
+                  </li>
+                  <li>2. Оплата товара была произведена банковским или почтовым переводом по реквизитам, указанным в личных данных продавца или предоставленным продавцом через площадку (при обработке заказа/ сообщения), и покупатель располагает всеми необходимыми документами, подтверждающими факт оплаты на полученные реквизиты.
+                  </li>
+                  <li>3. Покупатель предоставляет копию заверенного заявления в правоохранительные органы по вопросу мошенничества относительно продавца и выдержку с ЕРДР с указанным номером дела.
+                  </li>
+                  <li>4. Товар заказан в Украине и должен был быть доставлен на территорию Украины.
+                  </li>
+                  <li>5. Заказ оформлен не более 3 месяцев до момента обращения покупателя по Программе защиты.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <ul>
+              <li>Обратите внимание, что Программа защиты работает на заказы, которые не были доставлены продавцами.</li>
+              <li>По вопросам обмена/возврата рекомендуем обратиться к продавцу.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/moment.min.js"></script>
+    <script src="scripts/ofi.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.mousewheel.min.js"></script>
+    <script src="scripts/popper.js/dist/umd/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/velocity.min.js"></script>
+    <script src="scripts/validator.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
+    <script src="scripts/jquery.mCustomScrollbar.min.js"></script>
+    <script src="scripts/jquery.rateyo.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/xzoom.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

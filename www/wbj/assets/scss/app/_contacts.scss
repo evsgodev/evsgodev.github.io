@@ -1,0 +1,18 @@
+.section-contacts {
+  padding: 2.5rem 0;
+}
+
+.contacts-address {
+  font-size: 14px;
+  line-height: (24/14);
+
+  &__item {
+    margin-bottom: 3.75rem;
+
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

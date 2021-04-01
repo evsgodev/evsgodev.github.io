@@ -1,0 +1,210 @@
+label:not(.custom-control-label) {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+}
+
+.form-control {
+  padding: 8px 1rem;
+  box-shadow: none!important;
+  display: block;
+  width: 100%;
+  color: $input-color;
+  background-color: $input-bg;
+  border: $input-border-width solid $input-border-color;
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  @include form-control-focus();
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &:disabled,
+  &[readonly] {
+    background-color: $input-disabled-bg;
+    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      color: $input-color;
+      background-color: $input-disabled-bg;
+      border-color: $input-disabled-bg;
+      cursor: not-allowed;
+    }
+  }
+
+  .table & {
+    &:not(:disabled):not([readonly]) {
+      background-color: $gray-100;
+
+      &:focus {
+        color: $input-color;
+        background-color: $input-focus-bg;
+      }
+    }
+  }
+}
+
+.help-block {
+  font-weight: normal;
+  font-family: 'Roboto';
+  font-size: 12px;
+  text-align: center;
+  color: $danger;
+}
+
+.select-wrap {
+  position: relative;
+  width: 100%;
+  display: block;
+
+  select.form-control {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    &:not([size]):not([multiple]) {
+      height: 100%;
+    }
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+  }
+
+  .caret {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.custom-control-label {
+  cursor: pointer;
+  min-height: 1rem;
+  color: $black;
+}
+
+.custom-checkbox,
+.custom-radio {
+  min-height: auto;
+
+  table & {
+    margin-bottom: 0;
+  }
+
+  &:after {
+    box-shadow: none!important;
+  }
+
+  .custom-control-label {
+    &:before {
+      background-color: #fff;
+      border: 1px solid $custom-control-indicator-bg;
+      box-shadow: none!important;
+    }
+  }
+}
+
+.custom-checkbox {
+  .custom-control-label::before {
+    @include border-radius(0.35rem);
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      border-color: $primary;
+      background-color: $primary;
+    }
+    &::after {
+      background-image: $custom-checkbox-indicator-icon-checked;
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label::before {
+      border-color: $custom-control-indicator-checked-disabled-bg;
+      background-color: $custom-control-indicator-checked-disabled-bg;
+    }
+    &:indeterminate ~ .custom-control-label::before {
+      border-color: $custom-control-indicator-checked-disabled-bg;
+      background-color: $custom-control-indicator-checked-disabled-bg;
+    }
+  }
+}
+
+.custom-file {
+  position: relative;
+  width: auto;
+  min-width: 150px;
+  cursor: pointer;
+
+  .custom-file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%!important;
+    height: calc(2.50rem + 2px);
+    padding: 0.75rem .75rem;
+  }
+
+  .custom-file-label {
+    display: flex;
+    align-items: center;
+    height: calc(2.50rem + 2px);
+    padding: 0.75rem .75rem;
+
+    &::after {
+      display: none;
+    }
+
+    .icon-upload {
+      color: inherit;
+    }
+  }
+
+  .btn {
+    position: relative;
+    z-index: 3;
+  }
+
+  [type=submit] {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.custom-file-input.is-invalid~.custom-file-label,
+.was-validated .custom-file-input:invalid~.custom-file-label {
+  color: #000;
+  border-color: $input-bg;
+}
+
+.custom-file-input.is-valid~.custom-file-label,
+.was-validated .custom-file-input:valid~.custom-file-label {
+  color: $primary;
+  border-color: $primary;
+  background-color: #fff;
+}

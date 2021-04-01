@@ -1,0 +1,90 @@
+.tl-schedule {
+  &__control {
+    border-bottom: 1px solid $success;
+
+    .btn-control {
+      flex-shrink: 0;
+
+      &.order-1 {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__slide {
+    &:first-child {
+      padding-top: 3rem;
+    }
+
+    &:nth-child(n+2) {
+      .tl-schedule__list {
+        padding-top: 1.5rem;
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    line-height: inherit;
+    margin-bottom: 0;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 8px;
+      bottom: 0;
+      content: '';
+      width: 1px;
+      background-color: $primary;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      height: 18px;
+      width: 16px;
+      background-color: $white;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0.25rem;
+      left: 3px;
+      content: '';
+      height: 11px;
+      width: 11px;
+      background-color: $primary;
+      border-radius: 50%;
+    }
+  }
+
+  &__time {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-bottom: 0;
+    line-height: inherit;
+
+    > * {
+      margin-bottom: 0.25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Icon";
+	src: url('../fonts/Icon.eot');
+	src: url('../fonts/Icon.eot?#iefix') format('eot'),
+		url('../fonts/Icon.woff2') format('woff2'),
+		url('../fonts/Icon.woff') format('woff'),
+		url('../fonts/Icon.ttf') format('truetype'),
+		url('../fonts/Icon.svg#Icon') format('svg');
+}
+
+.icon:before {
+	font-family: "Icon";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-angle-right:before {
+	content: "\E001";
+}
+
+.icon-calendar:before {
+	content: "\E002";
+}
+
+.icon-close:before {
+	content: "\E003";
+}
+
+.icon-list-left:before {
+	content: "\E004";
+}
+
+.icon-location:before {
+	content: "\E005";
+}
+
+.icon-plus:before {
+	content: "\E006";
+}
+
+.icon-search:before {
+	content: "\E007";
+}
+
+.icon-star:before {
+	content: "\E008";
+}
+
+.icon-users:before {
+	content: "\E009";
+}
+
+.icon-weight:before {
+	content: "\E00A";
+}

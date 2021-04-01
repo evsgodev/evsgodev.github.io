@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <title>Room 301</title>
+    <!-- Edge and IE-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileImage" content="assets/img/touch/ms-touch-icon-144x144-precomposed.png">
+    <!-- Add to homescreen for Chrome on Android-->
+    <link rel="icon" sizes="192x192" href="assets/img/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <link rel="apple-touch-icon" href="assets/img/touch/apple-touch-icon.png">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/material-icons.css">
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="progress d-none" id="preloader"><img src="assets/img/three-dots.svg" alt="#"></div>
+    <div class="page-container">
+      <div class="page-row d-flex">
+        <aside class="sidebar bg-primary" id="sidebar">
+          <div class="sidebar__dialog">
+            <div class="sidebar__header"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 30"><path class="st0" d="M96.8 25.1c-.4 0-.4-.1-.4-.3v-6.7c0-.1 0-.2.4-.3v-.2h-2.9v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h2.9v-.2zm-13.7-7V22c0 2.5 1.7 3.4 3.9 3.4s3.9-.8 3.9-3.4v-3.9c0-.1 0-.2.4-.3v-.2h-2.9v.2c.4 0 .4.1.4.3V22c0 1.1-.6 1.6-1.8 1.6-1.1 0-1.8-.4-1.8-1.6v-3.9c0-.1 0-.2.4-.3v-.2h-2.9v.2c.3.1.4.2.4.3zm32 7c.5-.2.9-.4 1.3-.8s.7-.8.9-1.3c.2-.5.3-1 .3-1.5 0-2.1-1.2-3.8-3.8-3.8h-4.7v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h4.5c.5-.1 1-.1 1.5-.3zm-3.5-1.5v-4.2h1.8c.3 0 .6 0 .8.1.3.1.5.2.7.4.2.2.4.4.5.7.1.3.1.6.1.9 0 .3 0 .6-.1.9-.1.3-.3.5-.5.7-.2.2-.4.4-.7.4-.3.1-.6.1-.8.1h-1.8zm16.2 1.5c-.4 0-.4-.1-.4-.3v-4.5c1.9 2.2 2.9 3.3 3.5 3.9.5.6.6.7.6.8 0 .1-.1.2-.3.2v.2h2.7v-.2c-.4 0-.4-.1-.4-.3v-6.7c0-.1 0-.2.4-.3v-.2h-2.6v.2c.2 0 .3.1.3.3V22c-.2-.3-.6-.6-.9-1-1.1-1.2-2.5-2.8-2.5-2.9 0-.1.1-.2.4-.2v-.2h-3.4v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h2.7v-.3zm-20.7.6h.2v-2.5h-.2c0 .3-.1.4-.3.4H102v-5.4c0-.1 0-.2.4-.3v-.2h-2.9v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h7.3c.2-.1.2 0 .3.3zm33.2-.3c1.6 0 3.1-.3 4.5-1.1v-.2h-.1c-.1 0-.2-.1-.2-.2v-2.4c0-.2.1-.2.2-.2v-.2h-4.2c-.2 0-.2-.1-.2-.3h-.2v2h.2c0-.2.1-.3.2-.3h1.8v1c-.6.2-1.3.3-2 .3-1.2 0-2.7-.7-2.7-2.2 0-1.6 1.2-2.3 2.6-2.3 1.2 0 2.6.4 2.6.7v.2l.2.1.9-1.9-.2-.1-.1.1h-.1c-.1 0-.2-.1-.3-.1-.2-.1-.4-.2-.7-.3-.7-.2-1.5-.4-2.3-.3-2.3 0-4.6 1.3-4.6 3.9.1 2.5 2.3 3.8 4.7 3.8zm-17.8-.3c-.4 0-.4-.1-.4-.3v-6.7c0-.1 0-.2.4-.3v-.2h-2.9v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h2.9v-.2z"/><path class="st0" d="M149.7 27.4h-97V11.8H32.2V6h-.1l-16-6L0 6v23.1h1.6v-22l14.5-5.3 14.5 5.3v6.3h20.5v15.7h98.6v.3h.3V27h-.3zm2.3-.6h.4v3h-.4z"/><path class="st0" d="M80.5 23.1c0-1.1-.7-1.6-1.6-1.8.4 0 .7-.2 1-.5.2-.3.4-.7.4-1.1 0-1.4-1.1-2-2.6-2h-5.4v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h5.4c1.9-.1 2.8-1.1 2.8-2.3zm-5.8-3.9h1.9c1.2 0 1.5.1 1.5.7s-.3.7-1.5.7h-1.9v-1.4zm0 4.6V22h2.4c1 0 1.4.2 1.4.9 0 .6-.4.9-1.4.9h-2.4zm87 3.4l-4.9-1v.4l3.1.7v.1h-2.3v-.6h-5.1v3l5.1.2v-.4h4V28h.4v-.8zm-10.9-.4h.4v2.8h-.4zm.6 0h.4v2.8h-.4zm-1.2.2h.4v2.4h-.4zm-84.7-1.9c-.4 0-.4-.1-.4-.3v-2.3h2.5c1.8 0 2.7-1.1 2.7-2.4s-.9-2.4-2.7-2.4h-5v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2h2.9v-.3zm1.8-5.8c.8 0 1.1.2 1.1.8 0 .6-.4.9-1.1.9h-2.1v-1.7h2.1zM60 25.1c-.4 0-.4-.1-.4-.3v-6.7c0-.1 0-.2.4-.3v-.2h-2.9v.2c.4 0 .4.1.4.3v6.7c0 .1 0 .2-.4.3v.2H60v-.2z"/></svg>
+            </div>
+            <nav class="main-nav">
+              <ul class="main-nav__menu">
+                <li class="nav-item mb-2"><a class="nav-link" href="servers.html"><i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15"><path d="M16 1H2c-.6 0-1 .4-1 1v3c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zM3.5 4c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm8 0h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5zm3 0h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5z"/><path d="M16 0H2C.9 0 0 .9 0 2v3c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm1 5c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V2c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v3z"/><circle cx="3.5" cy="3.5" r=".5"/><path d="M11.5 3h-2c-.3 0-.5.2-.5.5s.2.5.5.5h2c.3 0 .5-.2.5-.5s-.2-.5-.5-.5zm3 0h-1c-.3 0-.5.2-.5.5s.2.5.5.5h1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5zM16 9H2c-.6 0-1 .4-1 1v3c0 .6.4 1 1 1h14c.6 0 1-.4 1-1v-3c0-.6-.4-1-1-1zM3.5 12c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm8 0h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5zm3 0h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5z"/><path d="M16 8H2c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2zm1 5c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1v-3c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v3z"/><circle cx="3.5" cy="11.5" r=".5"/><path d="M11.5 11h-2c-.3 0-.5.2-.5.5s.2.5.5.5h2c.3 0 .5-.2.5-.5s-.2-.5-.5-.5zm3 0h-1c-.3 0-.5.2-.5.5s.2.5.5.5h1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5z"/></svg></i><span>Servers</span></a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="projects.html"><i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path class="st0" d="M17.8 11.2L15 .6V.5c0-.3-.2-.5-.5-.5h-11c-.3 0-.5.2-.5.5v.1L.2 11.1c-.1.3-.2.6-.2.9v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4c0-.3-.1-.6-.2-.8zM4 1h10.1l2.4 9.1c-.2-.1-.3-.1-.5-.1h-4c0 1.7-1.3 3-3 3s-3-1.3-3-3H2c-.2 0-.3 0-.5.1L4 1zm13 15c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h3.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H16c.4 0 .7.2.9.6 0 .1.1.2.1.4v4z"/><path class="st0" d="M4.5 7h9c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-9c-.3 0-.5.2-.5.5s.2.5.5.5zm1-3h7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-7c-.3 0-.5.2-.5.5s.2.5.5.5z"/></svg></i><span>Projects</span></a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="signals.html"><i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 13"><path class="st0" d="M6.4 9.8l.9.7c.9-1 2.6-1 3.5 0l.9-.7C11 9.1 10 8.7 9 8.7c-1 0-2 .4-2.6 1.1z"/><path class="st0" d="M4.8 8.3l.8.7c.9-.9 2.1-1.4 3.4-1.4 1.3 0 2.5.5 3.4 1.4l.8-.7C12.1 7.1 10.6 6.5 9 6.5s-3.1.6-4.2 1.8zM9 10.8c-.6 0-1.1.5-1.1 1.1S8.4 13 9 13c.6 0 1.1-.5 1.1-1.1s-.5-1.1-1.1-1.1z"/><path class="st0" d="M3.2 6.7l.8.8c1.3-1.3 3.1-2.1 5-2.1s3.7.8 5 2.1l.8-.7C13.3 5.2 11.2 4.3 9 4.3c-2.2 0-4.3.9-5.8 2.4z"/><path class="st0" d="M9 0C5.6 0 2.4 1.3 0 3.7l.8.8C3 2.3 5.9 1.1 9 1.1c3.1 0 6 1.2 8.2 3.3l.8-.7C15.6 1.3 12.4 0 9 0z"/><path class="st0" d="M1.6 5.2l.8.7C4.1 4.2 6.5 3.3 9 3.3s4.9 1 6.6 2.7l.8-.7c-1.9-2-4.6-3-7.4-3-2.8-.1-5.5.9-7.4 2.9z"/></svg></i><span>Signals</span></a></li>
+                <li class="nav-item mb-2"><a class="nav-link" href="app-users.html"><i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"><path class="st0" d="M17.2 14.4c-2-1.6-4.1-2.7-4.8-3.1V8.6c.4-.4.6-1 .6-1.6V3.6c0-2-1.6-3.6-3.7-3.6h-.7C6.6 0 5 1.6 5 3.6V7c0 .6.3 1.1.7 1.5v2.8c-.8.4-2.9 1.5-4.8 3.1-.5.4-.8 1-.8 1.7v2.3c-.1.4.1.6.4.6s.5-.2.5-.5v-2.3c0-.3.2-.7.4-.9 2.1-1.7 4.4-2.8 4.8-3.1.2-.1.4-.3.4-.6V8.3c0-.2-.1-.3-.2-.4-.2-.2-.4-.5-.4-.9V3.6C6 2.2 7.2 1 8.6 1h.7c1.4 0 2.6 1.1 2.6 2.6V7c0 .3-.2.7-.5.8-.2.1-.2.3-.2.4v3.3c0 .3.2.5.4.6.4.2 2.7 1.3 4.8 3.1.3.2.4.5.4.9v2.3c0 .3.2.5.5.5s.5-.2.5-.5v-2.3c.2-.6-.1-1.2-.6-1.7z"/></svg></i><span>App users</span></a></li>
+              </ul>
+              <div class="main-nav__footer"><a class="nav-link" href="#"><i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17"><path d="M4.5 0h10c.3 0 .5.2.5.5s-.2.5-.5.5h-10C4.2 1 4 .8 4 .5s.2-.5.5-.5z"/><path d="M15 .5v16c0 .3-.2.5-.5.5s-.5-.2-.5-.5V.5c0-.3.2-.5.5-.5s.5.2.5.5zM5 .5v2c0 .3-.2.5-.5.5S4 2.8 4 2.5v-2c0-.3.2-.5.5-.5s.5.2.5.5zm0 14v2c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5z"/><path d="M4.5 16h10c.3 0 .5.2.5.5s-.2.5-.5.5h-10c-.3 0-.5-.2-.5-.5s.2-.5.5-.5zm-3-8h7c.3 0 .5.2.5.5s-.2.5-.5.5h-7c-.3 0-.5-.2-.5-.5s.2-.5.5-.5z"/><path d="M1 8.2c-.1.2-.1.5.1.6l2.1 2.1c.2.2.5.2.7 0 .2-.2.2-.5 0-.7L2.1 8.5l1.8-1.8c.2-.2.2-.5 0-.7-.2-.2-.5-.2-.7 0L1 8.2c0-.1 0 0 0 0z"/></svg></i><span>Logout</span></a></div>
+            </nav>
+          </div>
+        </aside>
+        <div class="page-content w-100">
+          <div class="modal-panel modal" id="panelFilter" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="ion-android-close"></i></button>
+                <form class="d-flex flex-column flex-fill" action="#" method="POST">
+                  <div class="modal-header">
+                    <h3 class="modal-title mr-2">Filters</h3>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label>Server</label>
+                      <div class="dropdown dropdown-select js-dropdown-select">
+                        <input class="input-select" type="hidden" value="1"/>
+                        <button class="form-control dropdown-toggle" data-toggle="dropdown" type="button"><span class="select"></span><i class="caret material-icons">keyboard_arrow_down</i></button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#"><span class="option" data-value="1" data-selected="selected">Shopping Mall Brussels	1</span></a><a class="dropdown-item" href="#"><span class="option" data-value="2">Shopping Mall Brussels	2</span></a><a class="dropdown-item" href="#"><span class="option" data-value="3">Shopping Mall Brussels 3</span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Notifications type</label>
+                      <div class="dropdown dropdown-select js-dropdown-select">
+                        <input class="input-select" type="hidden" value="1"/>
+                        <button class="form-control dropdown-toggle" data-toggle="dropdown" type="button"><span class="select"></span><i class="caret material-icons">keyboard_arrow_down</i></button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#"><span class="option" data-value="1" data-selected="selected">500 (Assistance requested)</span></a><a class="dropdown-item" href="#"><span class="option" data-value="2">500 (Assistance requested)</span></a><a class="dropdown-item" href="#"><span class="option" data-value="3">500 (Assistance requested)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-light" type="button" data-dismiss="modal">Cancel
+                    </button>
+                    <button class="btn btn-primary" type="submit">Save
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <header class="page-header pt-3">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-auto mb-3">
+                  <h1 class="m-0"><a class="next" href="projects.html"><i class="icon material-icons next__icon mr-2">keyboard_backspace</i>Room 301</a>
+                  </h1>
+                </div>
+                <div class="col-auto ml-auto d-flex mb-3">
+                  <button class="btn btn-primary" type="button" data-target="#panelProject" data-toggle="modal"><i class="icon material-icons icon icon-prepend">edit</i><span>Edit</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div class="container-fluid">
+              <div class="modal-panel modal" id="panelProject" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="ion-android-close"></i></button>
+                    <form class="d-flex flex-column flex-fill" action="#" method="POST">
+                      <div class="modal-header"><img class="rounded-circle mr-3 d-none" width="30" height="30" src="assets/img/avatar1.png" alt="#">
+                        <h3 class="modal-title mr-2"> New project</h3>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label>name</label>
+                          <input class="form-control" type="text" name="Name" value="Room 301">
+                        </div>
+                        <div class="form-group">
+                          <label>Notes</label>
+                          <input class="form-control" type="text" name="Notes" value="">
+                        </div>
+                        <div class="ui-divider ui-divider-horizontal">
+                          <h4 class="ui-divider-title">location</h4>
+                        </div>
+                        <div class="form-group">
+                          <label>Default</label>
+                          <input class="form-control" type="text" name="Location" value="Room 301, floor 3">
+                        </div>
+                        <div class="form-group">
+                          <label>En</label>
+                          <input class="form-control" type="text" name="LocationEn" value="Room 301, floor 3">
+                        </div>
+                        <div class="form-group">
+                          <label>Nl</label>
+                          <input class="form-control" type="text" name="LocationNl" value="Room 301, floor 3">
+                        </div>
+                        <div class="form-group">
+                          <label>Fr</label>
+                          <input class="form-control" type="text" name="LocationFr" value="Kamer 301, verdieping 3">
+                        </div>
+                        <div class="ui-divider ui-divider-horizontal">
+                          <h4 class="ui-divider-title">Icon</h4>
+                        </div>
+                        <div class="form-group">
+                          <label>Icon</label>
+                          <div class="dropdown dropdown-select js-dropdown-select">
+                            <input class="input-select" type="hidden" value="1" name="Icon"/>
+                            <button class="form-control dropdown-toggle" data-toggle="dropdown" type="button"><span class="select"><i class="icon"><img src="assets/img/icons/undefined.png" alt="#"/></i></span><i class="caret material-icons">keyboard_arrow_down</i></button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#"><span class="option" data-value="1" data-selected="selected"><i class="icon"><img src="assets/img/icons/building.png" alt="#"/></i>Building</span></a><a class="dropdown-item" href="#"><span class="option" data-value="2"><i class="icon"><img src="assets/img/icons/floor.png" alt="#"/></i>Floor</span></a><a class="dropdown-item" href="#"><span class="option" data-value="3"><i class="icon"><img src="assets/img/icons/door.png" alt="#"/></i>Room</span></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="help-block"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-light" type="button" data-dismiss="modal">Cancel
+                        </button>
+                        <button class="btn btn-primary" type="submit">Add
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-panel modal" id="editProject" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="ion-android-close"></i></button>
+                    <form class="d-flex flex-column flex-fill" action="#" method="POST">
+                      <div class="modal-header"><img class="mr-3" src="assets/img/avatar1.png" alt="#">
+                        <h3 class="modal-title mr-2"></h3>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label>name</label>
+                          <input class="form-control" type="text" name="Name" value="Room 301">
+                        </div>
+                        <div class="ui-divider ui-divider-horizontal">
+                          <h4 class="ui-divider-title">location</h4>
+                        </div>
+                        <div class="form-group">
+                          <label>Default</label>
+                          <input class="form-control" type="text" name="Location" value="Room 301, floor 3">
+                        </div>
+                        <div class="form-group">
+                          <label>En</label>
+                          <input class="form-control" type="text" name="LocationEn" value="Room 301, floor 3">
+                        </div>
+                        <div class="form-group">
+                          <label>Nl</label>
+                          <input class="form-control" type="text" name="LocationNl" value="Room 301, floor 3">
+                        </div>
+                        <div class="form-group">
+                          <label>Fr</label>
+                          <input class="form-control" type="text" name="LocationFr" value="Kamer 301, verdieping 3">
+                        </div>
+                        <div class="ui-divider ui-divider-horizontal">
+                          <h4 class="ui-divider-title">Icon</h4>
+                        </div>
+                        <div class="form-group">
+                          <label>Icon</label>
+                          <div class="dropdown dropdown-select js-dropdown-select">
+                            <input class="input-select" type="hidden" value="1" name="Icon"/>
+                            <button class="form-control dropdown-toggle" data-toggle="dropdown" type="button"><span class="select"><i class="icon"><img src="assets/img/icons/undefined.png" alt="#"/></i></span><i class="caret material-icons">keyboard_arrow_down</i></button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#"><span class="option" data-value="1" data-selected="selected"><i class="icon"><img src="assets/img/icons/building.png" alt="#"/></i>Building</span></a><a class="dropdown-item" href="#"><span class="option" data-value="2"><i class="icon"><img src="assets/img/icons/floor.png" alt="#"/></i>Floor</span></a><a class="dropdown-item" href="#"><span class="option" data-value="3"><i class="icon"><img src="assets/img/icons/door.png" alt="#"/></i>Room</span></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="help-block"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-light" type="button" data-dismiss="modal">Cancel
+                        </button>
+                        <button class="btn btn-primary" type="submit">Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row pb-3">
+                <div class="col-12 col-lg-6 mb-4">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <h4 class="list-group-title text-uppercase">Location</h4>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-12 col-sm-4"><span class="font-weight-bold text-dark">Default</span></div>
+                        <div class="col-12 col-sm-8 text-sm-right">Room 301, floor 3</div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-12 col-sm-4"><span class="font-weight-bold text-dark">EN</span></div>
+                        <div class="col-12 col-sm-8 text-sm-right">Room 301, floor 3</div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-12 col-sm-4"><span class="font-weight-bold text-dark">NL</span></div>
+                        <div class="col-12 col-sm-8 text-sm-right">Kamer 301, verdieping 3</div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-12 col-sm-4"><span class="font-weight-bold text-dark">FR</span></div>
+                        <div class="col-12 col-sm-8 text-sm-right">Chambre 301, Sol 3</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabs-row pb-1 mb-4">
+                <ul class="nav nav-tabs ipb-tabs">
+                  <li class="nav-item"><a class="nav-link" href="project-signals.html">Signals</a></li>
+                  <li class="nav-item"><a class="nav-link" href="project-users.html">Users</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="project-notifications.html">Notifications</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-auto ml-auto">
+                  <form class="search-filter" action="#" method="GET">
+                    <button class="search-filter__btn btn" type="button"><i class="icon ion-ios-search"></i></button>
+                    <input class="form-control" type="search" placeholder="Search">
+                  </form>
+                </div>
+              </div>
+              <div class="table-responsive mt-4">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="pt-0 border-top-0 sort" scope="col"><a class="d-block" href="#"><span class="d-inline-flex align-items-end">Building<i class="caret"></i></span></a></th>
+                      <th class="pt-0 border-top-0 sort" scope="col"><a class="d-block" href="#"><span class="d-inline-flex align-items-end">Type<i class="caret"></i></span></a></th>
+                      <th class="pt-0 border-top-0 sort" scope="col"><a class="d-block" href="#"><span class="d-inline-flex align-items-end">Message<i class="caret"></i></span></a></th>
+                      <th class="pt-0 border-top-0 sort" scope="col"><a class="d-block" href="#"><span class="d-inline-flex align-items-end">Owner<i class="caret"></i></span></a></th>
+                      <th class="pt-0 border-top-0 sort" scope="col"><a class="d-block" href="#"><span class="d-inline-flex align-items-end">Location<i class="caret"></i></span></a></th>
+                      <th class="pt-0 border-top-0 sort" scope="col"><a class="d-block" href="#"><span class="d-inline-flex align-items-end">Timestamp<i class="caret"></i></span></a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="media"><img class="mr-3" src="assets/img/avatar1.png" alt="#"></div><span>Shopping Mall Brussels</span>
+                        </div>
+                      </td>
+                      <td><span>500</span></td>
+                      <td><span>Assistance has been requested</span></td>
+                      <td><span>Frederick M.</span></td>
+                      <td><span>Room 301, floor 3</span></td>
+                      <td><span class="pointer" data-toggle="tooltip" data-placement="top" title="2018-04-24 14:37:22">2 min ago</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="media"><img class="mr-3" src="assets/img/avatar1.png" alt="#"></div><span>Shopping Mall Brussels</span>
+                        </div>
+                      </td>
+                      <td><span>500</span></td>
+                      <td><span>Assistance has been requested</span></td>
+                      <td><span>Frederick M.</span></td>
+                      <td><span>Room 301, floor 3</span></td>
+                      <td><span class="pointer" data-toggle="tooltip" data-placement="top" title="2018-04-24 14:37:22">2 min ago</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="media"><img class="mr-3" src="assets/img/avatar1.png" alt="#"></div><span>Shopping Mall Brussels</span>
+                        </div>
+                      </td>
+                      <td><span>500</span></td>
+                      <td><span>Assistance has been requested</span></td>
+                      <td><span>Frederick M.</span></td>
+                      <td><span>Room 301, floor 3</span></td>
+                      <td><span class="pointer" data-toggle="tooltip" data-placement="top" title="2018-04-24 14:37:22">2 min ago</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="media"><img class="mr-3" src="assets/img/avatar1.png" alt="#"></div><span>Shopping Mall Brussels</span>
+                        </div>
+                      </td>
+                      <td><span>500</span></td>
+                      <td><span>Assistance has been requested</span></td>
+                      <td><span>Frederick M.</span></td>
+                      <td><span>Room 301, floor 3</span></td>
+                      <td><span class="pointer" data-toggle="tooltip" data-placement="top" title="2018-04-24 14:37:22">2 min ago</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="media"><img class="mr-3" src="assets/img/avatar1.png" alt="#"></div><span>Shopping Mall Brussels</span>
+                        </div>
+                      </td>
+                      <td><span>500</span></td>
+                      <td><span>Assistance has been requested</span></td>
+                      <td><span>Frederick M.</span></td>
+                      <td><span>Room 301, floor 3</span></td>
+                      <td><span class="pointer" data-toggle="tooltip" data-placement="top" title="2018-04-24 14:37:22">2 min ago</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="media"><img class="mr-3" src="assets/img/avatar1.png" alt="#"></div><span>Shopping Mall Brussels</span>
+                        </div>
+                      </td>
+                      <td><span>500</span></td>
+                      <td><span>Assistance has been requested</span></td>
+                      <td><span>Frederick M.</span></td>
+                      <td><span>Room 301, floor 3</span></td>
+                      <td><span class="pointer" data-toggle="tooltip" data-placement="top" title="2018-04-24 14:37:22">2 min ago</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <nav aria-label="Page pagination">
+                <ul class="pagination py-4 justify-content-center">
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><i class="ion-chevron-left" aria-hidden="true"></i></a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#"> ...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">12</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Next"><i class="ion-chevron-right" aria-hidden="true"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/dropzone.min.js"></script>
+    <script src="assets/js/xlsx.full.min.js"></script>
+    <!-- core scripts-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

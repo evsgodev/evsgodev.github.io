@@ -1,0 +1,180 @@
+$body-color: $gray-900;
+$body-bg: $gray-100;
+$font-family-base: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$hr-border-color: $gray-500;
+
+html {
+  font-size: 0.8rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+@include media('>sm') {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media('>lg') {
+  html {
+    font-size: 1rem;
+  }
+}
+
+body {
+  position: relative;
+  font-family: $font-family-base;
+  font-size: 14px;
+  color: $body-color;
+  background-color: $body-bg;
+  overflow: hidden;
+}
+
+main {
+  background-color: $body-bg;
+}
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                theme-color("success");
+$link-decoration:           none;
+$link-hover-color:          $link-color;
+$link-hover-decoration:     underline;
+
+a {
+  color: inherit;
+  text-decoration: $link-decoration;
+  -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+  transition: color 200ms;
+  color: $link-hover-color;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($link-hover-color, 7%);
+  }
+
+  &.text-underline {
+    text-decoration: underline;
+  }
+
+  &.btn-link {
+    font-weight: $font-weight-normal;
+    color: $link-color;
+    background-color: transparent;
+  }
+
+  &.btn-link,
+  &.text-underline {
+    @include hover {
+      color: $link-hover-color;
+      text-decoration: none;
+    }
+
+    &:focus,
+    &.focus {
+      text-decoration: none;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $btn-link-disabled-color;
+    }
+  }
+
+  &.not-link {
+    pointer-events: none;
+  }
+}
+
+ul, ol {
+  padding: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+  list-style: none;
+
+  &.not-styled {
+    margin-bottom: 0;
+    line-height: inherit;
+  }
+}
+
+hr {
+  border-color: $hr-border-color;
+  margin-bottom: 1.5rem;
+}
+
+.pointer {
+  cursor: pointer;
+  outline: none;
+}
+
+.is-shadow {
+  transition: box-shadow 200ms ease;
+  &:hover {
+    @extend .shadow;
+  }
+}
+
+.is-fade {
+  transition: opacity 200ms ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.jarallax {
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.img-fit {
+  display: block;
+  width: 100%;
+  height: 100%;
+	object-fit: cover;
+	object-position: top;
+	font-family: "object-fit: cover; object-position: top;";
+}
+
+.img-fit_top {
+  object-position: top;
+  font-family: 'object-fit: cover; object-position: top;';
+}
+
+.img-fit_bottom {
+  object-position: bottom;
+  font-family: 'object-fit: cover; object-position: bottom;';
+}
+
+.shadow-sm {
+  box-shadow: 0 .5rem .75rem rgba(166, 178, 191, .125)!important
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(166, 178, 191, .25)!important
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(166, 178, 191, .175)!important
+}
+
+.border-success {
+  border-color: $success;
+}
+
+.border-success-light {
+  border-color: lighten($success, 25%);
+}

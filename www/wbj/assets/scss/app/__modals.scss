@@ -1,0 +1,160 @@
+.modal-popup {
+  .close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
+    box-shadow: none;
+    color: #000;
+    opacity: 0.7;
+    outline: none!important;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @include media('>sm') {
+      top: -1rem;
+      right: -1rem;
+      font-size: 0.75rem;
+      color: #ffffff;
+    }
+  }
+
+  .modal-header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    border: none;
+
+    .modal-title {
+      margin: 0;
+
+      &::after {
+        display: block;
+        content: '';
+        width: 100%;
+        max-width: 60px;
+        line-height: 1;
+        margin: 0.5rem auto 0;
+        border-bottom: 5px solid #007bff;
+      }
+    }
+  }
+}
+
+.modal-page {
+  .close:not([data-dismiss='alert']) {
+    position: fixed;
+    top: 1.125rem;
+    right: 1.75rem;
+    z-index: 10;
+  }
+}
+
+.modal-page {
+  .modal-dialog {
+    margin: auto;
+    max-width: none;
+  }
+
+  .modal-content {
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  &__header {
+    padding: 2.5rem 1.75rem 0.75rem;
+    border-bottom: 1px solid $success;
+    background-color: #fff;
+  }
+
+  .modal-body {
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  &__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.modal-search {
+  &.show {
+    .modal-dialog {
+      transform: none;
+    }
+  }
+  .modal-content {
+    background-color: $gray-100;
+  }
+
+  &__top {
+    padding: 0 0.75rem;
+    background-color: #fff;
+
+    &.position-fixed {
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
+
+      :not(.is-mobile) & {
+        right: 15px;
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__control.form-control {
+    height: calc(3.5rem + 4px);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1.25rem;
+    border: none;
+    transition: box-shadow 0.2s ease-in-out;
+    color: $success;
+    box-shadow: inset 0px 0px $success;
+
+    &::placeholder {
+      color: $success;
+    }
+
+    &:focus {
+      box-shadow: inset 0px -3px $success;
+      border-color: $success;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 1;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .alert-dismissible {
+    padding-right: 1.5rem;
+    font-size: 1rem;
+
+    .close {
+      bottom: 0;
+      padding: 0 1.5rem;
+    }
+  }
+}
+

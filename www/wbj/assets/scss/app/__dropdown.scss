@@ -1,0 +1,15 @@
+.dropdown-menu {
+  @extend .shadow-lg;
+  @extend .border-success-light;
+  border-radius: 4px;
+}
+
+.dropdown-toggle {
+  &::after {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    border-top: 0.4em solid $gray-900;
+    border-right: 0.4em solid transparent;
+    border-left: 0.4em solid transparent;
+  }
+}

@@ -1,0 +1,16 @@
+.page-footer {
+  a {
+    color: inherit;
+  }
+
+  &__social {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+
+    .icon {
+      width: 45px;
+      text-align: center;
+    }
+  }
+}

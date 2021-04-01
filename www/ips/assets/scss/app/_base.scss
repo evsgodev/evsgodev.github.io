@@ -1,0 +1,125 @@
+html {
+  font-size: 0.8rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+body {
+  background-color: #fff;
+  font-family: $font-family-sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin-bottom: 1.50rem;
+}
+
+pre {
+  font-family: inherit;
+  font-size: inherit;
+  overflow: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.badge {
+  min-width: 28px;
+}
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+.text-dark {
+  color: $black!important;
+}
+
+.ui-divider {
+  &::before,
+  &::after {
+    flex-grow: 1;
+    content: '';
+    background-color: $gray-200;
+  }
+}
+
+.ui-divider-horizontal {
+  margin: 0 calc(-1rem + 4px) 1.25rem;
+  display: flex;
+  align-items: center;
+
+  &::before,
+  &::after {
+    height: 1px;
+    margin: 0 calc(1rem - 4px);
+  }
+}
+
+.ui-divider-title {
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $gray-600;
+}
+
+.page-bg {
+  background-color: $primary;
+  background-image: linear-gradient(to right bottom, $primary, lighten($primary, 15%));
+}
+
+%material-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga'
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#000, 0.1);
+  z-index: 100000;
+}

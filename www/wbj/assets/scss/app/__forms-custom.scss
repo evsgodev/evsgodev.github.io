@@ -1,0 +1,27 @@
+.custom-control {
+  padding-left: 1.75rem;
+}
+
+.custom-control-label {
+  display: inline-block;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  font-size: 14px;
+  color: $gray-600;
+
+  &::before {
+    top: 4px;
+    background-color: #fff;
+    border: 1px solid $gray-500;
+  }
+
+  &::after {
+    top: 4px;
+  }
+}
+
+.custom-checkbox {
+  .custom-control-label::after {
+    background-size: auto;
+  }
+}

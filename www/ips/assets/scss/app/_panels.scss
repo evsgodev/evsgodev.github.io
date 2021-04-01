@@ -1,0 +1,57 @@
+.list-group {
+  color: $gray-600;
+  font-size: 12px;
+}
+
+.list-group-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.list-group-item {
+  position: relative;
+  padding: 10px 20px;
+  background-color: $list-group-bg;
+  border: $list-group-border-width solid $list-group-border-color;
+
+  &:first-child {
+    @include border-top-radius($list-group-border-radius);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    @include border-bottom-radius($list-group-border-radius);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $list-group-disabled-color;
+    background-color: $list-group-disabled-bg;
+  }
+
+  // Include both here for `<a>`s and `<button>`s
+  &.active {
+    z-index: 2; // Place active items above their siblings for proper border styling
+    color: $list-group-active-color;
+    background-color: $list-group-active-bg;
+    border-color: $list-group-active-border-color;
+  }
+}
+
+.list-group-props {
+  font-size: 11px;
+  color: $gray-600;
+
+  > li {
+    margin: 0 -0.50rem 0.75rem;
+
+    > * {
+      padding: 0 0.50rem;
+    }
+  }
+}

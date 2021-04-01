@@ -1,0 +1,15 @@
+.championship-nav {
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    .icon {
+      font-size: 1.1em;
+      line-height: 1;
+    }
+  }
+}

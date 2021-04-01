@@ -1,0 +1,58 @@
+$search-filter-input-bg: #F4F8F9;
+$search-filter-input-color: $gray-600;
+
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: calc(100% - #{$sidebar-width});
+  height: 75/16 + rem;
+  border-bottom: 1px solid $hr-border-color;
+  margin-bottom: 1.75rem;
+  background-color: $white;
+  z-index: 10;
+
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: $black;
+
+    &.h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .next {
+    display: inline-flex;
+    color: inherit;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+
+    &__icon {
+      position: relative;
+      top: 0.22rem;
+      font-size: 1.14285em
+    }
+  }
+
+  small {
+    margin-left: 2.25rem;
+    font-size: 10px;
+    color: $gray-600;
+  }
+
+  &__search-filter {
+    .search-filter {
+      min-width: 210px;
+    }
+  }
+}

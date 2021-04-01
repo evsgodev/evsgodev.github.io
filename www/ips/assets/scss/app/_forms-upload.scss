@@ -1,0 +1,90 @@
+.dropzone {
+  position: relative;
+  min-height: 150px;
+  border: 1px dashed $gray-300;
+  min-height: auto;
+  padding: 0;
+  margin-bottom: 1.75rem;
+  border-radius: 0.25rem;
+  background: white;
+  color: $gray-600;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    border-color: $input-focus-border-color;
+  }
+
+  &:active {
+    border-color: $input-focus-border-color;
+  }
+
+  .dz-message {
+    display: block!important;
+    padding: 1.25rem;
+    margin: 0;
+  }
+
+  .icon-upload {
+    font-size: 20px;
+  }
+
+  .dz-progress,
+  .dz-success-mark,
+  .dz-error-mark,
+  .dz-error-message,
+  .dz-size {
+    display: none!important;
+  }
+
+  .dz-details {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dz-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    min-height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dz-image {
+      width: 80px;
+      height: 80px;
+
+      img {
+        width: auto;
+        max-width: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .dz-clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 1;
+    background-color: transparent;
+    z-index: 30;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

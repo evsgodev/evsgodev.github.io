@@ -1,0 +1,285 @@
+/**
+* Tables
+*/
+.table-responsive {
+  .dt-bootstrap4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.dataTable {
+  min-width: 440px;
+
+  thead th {
+    &.col-0 {
+      width: 1px;
+      padding-right: 0;
+    }
+  }
+}
+
+.table {
+  padding-top: 0.25rem;
+  margin-bottom: 0;
+  font-weight: normal;
+
+  &.ipb-servers-table {
+    th {
+      &:first-child {
+        padding-left: 60px;
+      }
+    }
+  }
+
+  &:not(.table-sm) {
+    td {
+      height: 50px!important;
+    }
+  }
+
+  th, td {
+    border-bottom: 1px solid $gray-200;
+
+    &:last-child:not(.sorting) {
+      text-align: right;
+    }
+  }
+
+  thead {
+    th {
+      padding: 0;
+      border-bottom-width: 1px;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $gray-600;
+      white-space: nowrap;
+      outline: none;
+
+      @at-root .dataTable thead th {
+        padding: 0 .75rem .75rem;
+      }
+
+      > a {
+        padding: 0 .75rem .75rem;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      &[class*=sort] {
+        cursor: pointer;
+
+        &:hover {
+          color: $black;
+        }
+
+        .caret {
+          &:before,
+          &:after {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            margin: 1px auto;
+            border: 4px solid currentColor;
+            border-width: 4px;
+            border-color: currentColor transparent;
+          }
+
+          &:before {
+            border-top-width: 0;
+          }
+
+          &:after {
+            border-bottom-width: 0;
+          }
+        }
+
+        &:hover {
+          color: $black;
+        }
+
+        &[class*=asc],
+        &[class*=desc] {
+          .caret {
+            height: 1em;
+            opacity: 1;
+
+            &:before {
+              display: none;
+            }
+
+            &:after {
+              content: 'keyboard_arrow_down';
+              @extend %material-icon;
+              width: auto;
+              height: auto;
+              border: none;
+              font-size: inherit;
+            }
+          }
+        }
+
+        &[class*=asc] {
+          .caret {
+            transform: rotate(0deg);
+          }
+        }
+
+        &[class*=desc] {
+          .caret {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .caret {
+        position: relative;
+        height: 0.9em;
+        min-width: 1em;
+        margin-left: 2px;
+        font-size: 14px;
+        line-height: 1;
+        opacity: .8;
+      }
+
+      .custom-control {
+        margin-right: 0;
+        min-height: auto;
+
+        .custom-control-label {
+          color: inherit;
+
+          &::before, &::after {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  td {
+    color: $black;
+    font-size: 11px;
+    line-height: 24px;
+
+    &.guid {
+      position: relative;
+      padding-left: 60px;
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      width: auto;
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .media {
+      position: relative;
+      width: 45px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -12px 0;
+    }
+
+    &.status {
+      white-space: nowrap;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 7px;
+        height: 7px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        background-color: currentColor;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.table-sm {
+  tbody,
+  tfoot {
+    td {
+      padding: 0.5rem;
+
+      .form-control {
+        width: auto;
+        padding: 6px 0.5rem;
+      }
+    }
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: transparent;
+  }
+  tbody tr:nth-of-type(#{$table-striped-order}) {
+    background-color: $table-accent-bg;
+  }
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr {
+    @include hover {
+      background-color: $table-hover-bg;
+    }
+
+    &.select {
+      background-color: lighten($table-hover-bg, 5%);
+    }
+  }
+}
+
+#addAppUsersForm .table-responsive {
+  position: relative;
+  overflow: initial;
+  overflow-x: initial;
+  min-height: calc(37.9rem + 22px);
+  padding-bottom: calc(32px + 3rem);
+
+  .dataTables_wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .dataTables_empty {
+    display: none;
+  }
+
+  .dataTables_paginate {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
